@@ -1,0 +1,92 @@
+/*
+ * Marlow Greenan
+ * Created: 4/19/2026
+ * Last Updated: 09/04/2026
+ * 
+ * Manages the order in which managers are initialized.
+ */
+using NaughtyAttributes;
+using System.Collections;
+using UnityEngine;
+using UnityEngine.Events;
+using UnityEngine.SceneManagement;
+namespace MarUtility.ExecutionManagement
+{
+    public class SceneLoader : MonoBehaviour
+    {
+        private static SceneLoader inst;
+
+        [SerializeField, BoxGroup("Scene IDs")]
+        private string _scenePersistantID = "Scene_Persistant";
+
+        [SerializeField, BoxGroup("Tick"), MinValue(0.1f)]
+            private float _tickInterval;
+        [SerializeField, BoxGroup("Tick")]
+            private bool _runTickUpdate = true;
+
+        [SerializeField]
+            private Manager[] _managers;
+
+        [SerializeField, BoxGroup("Start Events"), MinValue(0)]
+        private float _startDelay;
+        [SerializeField, BoxGroup("Start Events")]
+        private UnityEvent _onStart = new UnityEvent();
+
+        #region GS
+        public static SceneLoader INST { get => inst; }
+        public float TickInterval
+        {
+            get => _tickInterval;
+            set
+            {
+                _tickInterval = value;
+                if (_tickInterval < 0) _tickInterval = 0;
+            }
+        }
+        public bool RunTickUpdate { get => _runTickUpdate; set => _runTickUpdate = value; }
+        #endregion
+
+        private void Awake()
+        {
+            //Load persistant scene.
+            if (!UnityEngine.SceneManagement.SceneManager.GetSceneByName(_scenePersistantID).isLoaded)
+                UnityEngine.SceneManagement.SceneManager.LoadSceneAsync(_scenePersistantID, LoadSceneMode.Additive);
+
+
+            //SceneLoader Instance
+            if (inst != null && inst != this) Destroy(this);
+            else inst = this;
+
+            //Initialize managers
+            foreach (Manager manager in _managers)
+                if (manager.InitializeTime == InitializeTime.SCENELOADER_AWAKE) manager.Initialize();
+        }
+
+        private void Start()
+        {
+            StartCoroutine(StartDelay());
+        }
+
+        private IEnumerator StartDelay()
+        {
+            yield return new WaitForSeconds(_startDelay);
+            _onStart.Invoke();
+        }
+    }
+    public enum InitializeTime
+    {
+        MANUAL = 000,
+        SCENELOADER_AWAKE = 100,
+        AWAKE = 110,
+        START = 200,
+    }
+
+    public enum UpdateTime
+    {
+        NONE = 000,
+        SCENELOADER_TICK = 100,
+        FIXED_UPDATE = 200,
+        UPDATE = 300,
+    }
+}
+
