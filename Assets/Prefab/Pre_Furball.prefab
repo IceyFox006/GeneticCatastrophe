@@ -190,13 +190,20 @@ MonoBehaviour:
   _genotype:
   - key: {fileID: 11400000, guid: fa0178282ccca4c49814cc4c56a6e372, type: 2}
     value:
-      _type: 100
+      type: 100
       _alleles:
       - {fileID: 11400000, guid: e2438696cb56c554c8a66624d108f919, type: 2}
-      - {fileID: 11400000, guid: e2180e3273b96b3499dd57c1d1f37b89, type: 2}
+      - {fileID: 11400000, guid: e2438696cb56c554c8a66624d108f919, type: 2}
       _connectPointID:
       - ConPt_Tail
-      connectionPoints: []
+  - key: {fileID: 11400000, guid: e0bc4bbe04c308c41b46dacff9ffea51, type: 2}
+    value:
+      type: 300
+      _alleles:
+      - {fileID: 11400000, guid: ed0c472172f463440b433d96f887c46f, type: 2}
+      - {fileID: 11400000, guid: ed0c472172f463440b433d96f887c46f, type: 2}
+      _connectPointID:
+      - ConPt_Tail
   phenotype: []
 --- !u!4 &7551403323000950475 stripped
 Transform:

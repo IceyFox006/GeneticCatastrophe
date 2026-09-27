@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d6f2d382503a4094bb7ecf6228725d5c, type: 3}
-  m_Name: Gene_Furball_Tail
+  m_Name: Gene_Furball_BaseFur
   m_EditorClassIdentifier: Assembly-CSharp::SO_Gene
-  _name: Tail
+  _name: Base Fur
   _description: 
-  geneType: 100
-  dominanceType: 100
+  geneType: 300
+  dominanceType: 300
   _alleles:
-  - {fileID: 11400000, guid: e2180e3273b96b3499dd57c1d1f37b89, type: 2}
-  - {fileID: 11400000, guid: e2438696cb56c554c8a66624d108f919, type: 2}
+  - {fileID: 11400000, guid: ed0c472172f463440b433d96f887c46f, type: 2}
+  - {fileID: 11400000, guid: 389a98c9670329f41bf5a8fbd6d0c427, type: 2}

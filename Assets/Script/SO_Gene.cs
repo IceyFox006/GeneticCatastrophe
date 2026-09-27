@@ -12,16 +12,20 @@ public class SO_Gene : ScriptableObject
     [SerializeField, BoxGroup("General"), ResizableTextArea]
     protected string _description;
 
+    [SerializeField, ReadOnly]
+    private EGeneType geneType;
+
     //GENETICS
     [SerializeField, BoxGroup("Genetics")]
     protected EDominanceType dominanceType;
 
-    [SerializeField, BoxGroup("Genetics"), Tooltip("Index determines dominance. The smaller the index, the higher the dominance.\nEx. 1 has more dominance than 5.")]
+    [SerializeField, BoxGroup("Genetics"), OnValueChanged("OnVC_Alleles"), Tooltip("Index determines dominance. The smaller the index, the higher the dominance.\nEx. 1 has more dominance than 5.")]
     protected SO_Allele[] _alleles;
 
     #region GS
     public EDominanceType DominanceType { get => dominanceType; }
     public string Name { get => _name; }
+    public EGeneType GeneType { get => geneType; }
     #endregion
 
     //Returns the index(dominance) of the allele given. If the allele is not in the gene, returns -1.
@@ -43,13 +47,25 @@ public class SO_Gene : ScriptableObject
         }
         return alleles[dI];
     }
+
+    #region Inspector
+    private void OnVC_Alleles()
+    {
+        if (_alleles.Length > 0)
+        {
+            if (_alleles[0] != null)
+                geneType = _alleles[0].GeneType;
+        }
+    }
+    #endregion
 }
 #region Enums
 public enum EGeneType
 {
     NONE = 000,
     MODEL = 100,
-    TEXTURE = 200
+    TEXTURE = 200,
+    COLOR = 300
 }
 
 public enum EDominanceType

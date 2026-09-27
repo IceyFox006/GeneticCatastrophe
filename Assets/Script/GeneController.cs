@@ -6,7 +6,7 @@ using MarUtility;
 
 public class GeneController : Manager
 {
-    [SerializeField]
+    [SerializeField, OnValueChanged("OnVC_Genotype")]
     private Dictionary<SO_Gene, ActGene> _genotype;
     [SerializeField, ReadOnly]
     private Dictionary<SO_Gene, List<SO_Allele>> phenotype;
@@ -62,6 +62,16 @@ public class GeneController : Manager
         phenotype[kvp.Key].Add(dominantAllele);
     }
     #endregion
+
+    #region Inspector
+    private void OnVC_Genotype()
+    {
+        foreach (KeyValuePair<SO_Gene, ActGene> kvp in _genotype)
+        {
+            kvp.Value.Type = kvp.Key.GeneType;
+        }
+    }
+    #endregion
 }
 
 //ACT GENES
@@ -69,23 +79,27 @@ public class GeneController : Manager
 [System.Serializable]
 public class ActGene
 {
-    [SerializeField]
-    private EGeneType _type;
+    [SerializeField, ReadOnly]
+    private EGeneType type;
 
     [SerializeField]
     private List<SO_Allele> _alleles = new List<SO_Allele>();
 
     //MODEL
     private Transform parent;
-    [SerializeField, AllowNesting, ShowIf("_type", EGeneType.MODEL), Tooltip("CASE SENSITIVE. The name of the gameObjects the model will be childed to.")]
+    //Connection Points
+    [SerializeField, AllowNesting, ShowIf("type", EGeneType.MODEL), Tooltip("CASE SENSITIVE. The name of the gameObjects the model will be childed to.")]
     private string[] _connectPointID;
     private List<Transform> connectionPoints = new List<Transform>();
 
+    //TEXTURE
 
+    //COLOR
     #region GS
     public List<SO_Allele> Alleles { get => _alleles; set => _alleles = value; }
     public string[] ConnectPointID { get => _connectPointID; }
     public List<Transform> ConnectionPoints { get => connectionPoints; }
+    public EGeneType Type { get => type; set => type = value; }
     #endregion
 
     public void Initialize(Transform p)
@@ -109,20 +123,6 @@ public class ActGene
                 Debug.LogError("Failed to find connection point \"" + _connectPointID[cpID] + "\".");
         }
     }
-
-    #region Inspector
-    private void OnVC_Alleles()
-    {
-        Debug.Log("h");
-        if (_alleles.Count > 2)
-        {
-            List<SO_Allele> replacement = new List<SO_Allele>();
-            for (int i = 0; i < 2; i++)
-                replacement[i] = _alleles[i];
-            _alleles = replacement;
-        }
-    }
-    #endregion
 
     //-----------------------------------------------------------------------------------------------------------------
 }

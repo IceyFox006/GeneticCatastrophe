@@ -1,4 +1,3 @@
-using JetBrains.Annotations;
 using NaughtyAttributes;
 using UnityEngine;
 
@@ -11,6 +10,10 @@ public class SO_Allele : ScriptableObject
 
     [SerializeField, BoxGroup("General"), ResizableTextArea]
     protected string _description;
+
+    protected EGeneType geneType;
+
+    public virtual EGeneType GeneType { get => geneType; }
 
     public virtual void ApplyToPhenotype(ActGene actGene) { }
 }

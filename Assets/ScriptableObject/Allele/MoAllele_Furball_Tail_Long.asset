@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78ef8e0d8b52f034f8906de52a6452d9, type: 3}
   m_Name: MoAllele_Furball_Tail_Long
   m_EditorClassIdentifier: Assembly-CSharp::SO_Allele_Model
-  _name: 
+  _name: Long Tail
   _description: 
   _model: {fileID: 919132149155446097, guid: 462a23b843040d24fac537b50d94cbb6, type: 3}
