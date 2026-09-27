@@ -1,7 +1,5 @@
 using NaughtyAttributes;
-using NUnit.Framework;
 using System.Collections.Generic;
-using System.Linq;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "Gene_", menuName = "Scriptable Objects/Genetics/Gene")]
@@ -46,6 +44,7 @@ public class SO_Gene : ScriptableObject
         return alleles[dI];
     }
 }
+#region Enums
 public enum EGeneType
 {
     NONE = 000,
@@ -60,3 +59,4 @@ public enum EDominanceType
     INCOMPLETE = 200,
     CODOMINANCE = 300,
 }
+#endregion

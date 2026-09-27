@@ -12,5 +12,5 @@ public class SO_Allele : ScriptableObject
     [SerializeField, BoxGroup("General"), ResizableTextArea]
     protected string _description;
 
-    public virtual void ApplyToPhenotype(Transform parent, ActGene actGene) { }
+    public virtual void ApplyToPhenotype(ActGene actGene) { }
 }

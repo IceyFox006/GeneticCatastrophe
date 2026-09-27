@@ -1,8 +1,8 @@
 using MarUtility.ExecutionManagement;
 using NaughtyAttributes;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
+using MarUtility;
 
 public class GeneController : Manager
 {
@@ -20,10 +20,11 @@ public class GeneController : Manager
         base.Initialize();
     }
 
+    //Initializes the genotype.
     private void InitializeGenotype()
     {
         foreach (KeyValuePair<SO_Gene, ActGene> kvp in _genotype)
-            kvp.Value.Initialize(transform);
+            kvp.Value.Initialize(transform); //Initialize act genes.
     }
 
     #region Phenotype
@@ -44,13 +45,13 @@ public class GeneController : Manager
         }
     }
 
-    //Applies phenotype genes to the model.
+    //Applies phenotype genes to the model. Must have initialized the phenotype beforehand.
     private void ApplyPhenotype()
     {
         foreach (KeyValuePair<SO_Gene, List<SO_Allele>> kvp in phenotype)
         {
             foreach (SO_Allele allele in kvp.Value)
-                allele.ApplyToPhenotype(transform, _genotype[kvp.Key]);
+                allele.ApplyToPhenotype(_genotype[kvp.Key]);
         }
     }
 
@@ -78,12 +79,13 @@ public class ActGene
     private Transform parent;
     [SerializeField, AllowNesting, ShowIf("_type", EGeneType.MODEL), Tooltip("CASE SENSITIVE. The name of the gameObjects the model will be childed to.")]
     private string[] _connectPointID;
-    private List<Transform> connectionPoints;
+    private List<Transform> connectionPoints = new List<Transform>();
 
 
     #region GS
     public List<SO_Allele> Alleles { get => _alleles; set => _alleles = value; }
     public string[] ConnectPointID { get => _connectPointID; }
+    public List<Transform> ConnectionPoints { get => connectionPoints; }
     #endregion
 
     public void Initialize(Transform p)
@@ -92,26 +94,19 @@ public class ActGene
         AssignConnectionPoints();
     }
 
-    /*  
-     *  Searches through the children transforms until it finds one with the same names as one of the connection points.
-     *  Once it finds a match, add it to the connection point list then continue on to find a match for the next id.
-     */ 
+    //Finds the child with a name matching the connection point and adds it to the connection point lsit.
     private void AssignConnectionPoints()
     {
+        connectionPoints.Clear();
+        Transform curConPt;
         for (int cpID = 0; cpID < _connectPointID.Length; cpID++)
         {
-            for (int c = 0; c < parent.childCount; c++)
-            {
-                Debug.Log(parent.GetChild(c).name);
-                if (parent.GetChild(c).name.Equals(_connectPointID[cpID])) //Found connection point.
-                {
-                    connectionPoints.Add(parent.GetChild(c));
-                    break;
-                }
+            curConPt = MarData.FindChildWithName(parent, _connectPointID[cpID]);   
 
-                if (c == parent.childCount - 1) //Failed to find a connection point.
-                    Debug.LogError("Failed to find connection point \"" + _connectPointID[cpID] + "\".");
-            }
+            if (curConPt != null)
+                connectionPoints.Add(curConPt);
+            else
+                Debug.LogError("Failed to find connection point \"" + _connectPointID[cpID] + "\".");
         }
     }
 
@@ -128,4 +123,6 @@ public class ActGene
         }
     }
     #endregion
+
+    //-----------------------------------------------------------------------------------------------------------------
 }
