@@ -1,128 +1,111 @@
+/*
+ * Marlow Greenan
+ * Created: 10/06/2026
+ * Last Updated: 10/06/1026 by Marlow Greenan
+ * 
+ * 
+ */
 using MarUtility.ExecutionManagement;
 using NaughtyAttributes;
 using System.Collections.Generic;
 using UnityEngine;
-using MarUtility;
 
 public class GeneController : Manager
 {
-    [SerializeField, OnValueChanged("OnVC_Genotype")]
-    private Dictionary<SO_Gene, ActGene> _genotype;
-    [SerializeField, ReadOnly]
-    private Dictionary<SO_Gene, List<SO_Allele>> phenotype;
+    //GENOTYPES
+    [SerializeField, BoxGroup("Genotype")]
+    private Dictionary<SO_Gene, ActGene> _modelGenotype;
+
+    [SerializeField, BoxGroup("Genotype")]
+    private Dictionary<SO_Gene, ActGene> _textureGenotype;
+
+    [SerializeField, BoxGroup("Genotype")]
+    private Dictionary<SO_Gene, ActGene> _colorGenotype;
+
+    //VISUAL
+    [SerializeField, BoxGroup("Visual"), Label("Genetics Material")]
+    private Material _mat;
 
     public override void Initialize()
     {
-        InitializeGenotype();
-        InitializePhenotype();
-        ApplyPhenotype();
-
         base.Initialize();
-    }
 
-    //Initializes the genotype.
-    private void InitializeGenotype()
-    {
-        foreach (KeyValuePair<SO_Gene, ActGene> kvp in _genotype)
-            kvp.Value.Initialize(transform); //Initialize act genes.
+        InitializeAndApplyGenotypes();
     }
-
-    #region Phenotype
-    //Creates the phenotype. Must have initialized the genotype beforehand.
-    private void InitializePhenotype()
+    
+    //Initializes and applies all genotypes.
+    private void InitializeAndApplyGenotypes()
     {
-        foreach (KeyValuePair<SO_Gene, ActGene> kvp in _genotype) //Iterate through the genotype.
+        //Model
+        foreach (KeyValuePair<SO_Gene, ActGene> kvp in _modelGenotype)
         {
-            phenotype[kvp.Key] = new List<SO_Allele>();
-            switch (kvp.Key.DominanceType)
-            {
-                case EDominanceType.COMPLETE: AddCompleteGeneToPhenotype(kvp); break;
-                case EDominanceType.INCOMPLETE: break;
-                case EDominanceType.CODOMINANCE: break;
-                default: Debug.LogError("FAILED TO INITIALIZE.\n" + kvp.Key.Name + " does not have a dominance type."); break;
-            }
-            
+            kvp.Value.Initialize(kvp.Key, transform);
+            kvp.Value.Apply();
+        }
+
+        //Texture
+        foreach (MeshRenderer mr in transform.GetComponentsInChildren<MeshRenderer>())
+            mr.material = _mat;
+        foreach (KeyValuePair<SO_Gene, ActGene> kvp in _textureGenotype)
+        {
+            kvp.Value.Initialize(kvp.Key, transform);
+            kvp.Value.Apply();
+        }
+
+        //Color
+        foreach (KeyValuePair<SO_Gene, ActGene> kvp in _colorGenotype)
+        {
+            kvp.Value.Initialize(kvp.Key, transform);
+            kvp.Value.Apply();
         }
     }
-
-    //Applies phenotype genes to the model. Must have initialized the phenotype beforehand.
-    private void ApplyPhenotype()
-    {
-        foreach (KeyValuePair<SO_Gene, List<SO_Allele>> kvp in phenotype)
-        {
-            foreach (SO_Allele allele in kvp.Value)
-                allele.ApplyToPhenotype(_genotype[kvp.Key]);
-        }
-    }
-
-    //Adds the single most dominant allele to the phenotype.
-    private void AddCompleteGeneToPhenotype(KeyValuePair<SO_Gene, ActGene> kvp)
-    {
-        SO_Allele dominantAllele = kvp.Key.GetDominantAllele(kvp.Value.Alleles);
-        phenotype[kvp.Key].Add(dominantAllele);
-    }
-    #endregion
-
-    #region Inspector
-    private void OnVC_Genotype()
-    {
-        foreach (KeyValuePair<SO_Gene, ActGene> kvp in _genotype)
-        {
-            kvp.Value.Type = kvp.Key.GeneType;
-        }
-    }
-    #endregion
 }
-
-//ACT GENES
+//=====================================================================================================================
+//ACT GENE
 //=====================================================================================================================
 [System.Serializable]
 public class ActGene
 {
-    [SerializeField, ReadOnly]
-    private EGeneType type;
-
-    [SerializeField]
-    private List<SO_Allele> _alleles = new List<SO_Allele>();
-
-    //MODEL
+    private SO_Gene gene;
     private Transform parent;
-    //Connection Points
-    [SerializeField, AllowNesting, ShowIf("type", EGeneType.MODEL), Tooltip("CASE SENSITIVE. The name of the gameObjects the model will be childed to.")]
-    private string[] _connectPointID;
-    private List<Transform> connectionPoints = new List<Transform>();
 
-    //TEXTURE
+    //ALLELES
+    [SerializeField]
+    private SO_Allele _allele1;
+    [SerializeField]
+    private SO_Allele _allele2;
 
-    //COLOR
-    #region GS
-    public List<SO_Allele> Alleles { get => _alleles; set => _alleles = value; }
-    public string[] ConnectPointID { get => _connectPointID; }
-    public List<Transform> ConnectionPoints { get => connectionPoints; }
-    public EGeneType Type { get => type; set => type = value; }
-    #endregion
-
-    public void Initialize(Transform p)
+    public void Initialize(SO_Gene g, Transform p)
     {
+        gene = g;
         parent = p;
-        AssignConnectionPoints();
     }
 
-    //Finds the child with a name matching the connection point and adds it to the connection point lsit.
-    private void AssignConnectionPoints()
+    public void Apply()
     {
-        connectionPoints.Clear();
-        Transform curConPt;
-        for (int cpID = 0; cpID < _connectPointID.Length; cpID++)
+        switch (gene.DominanceType)
         {
-            curConPt = MarData.FindChildWithName(parent, _connectPointID[cpID]);   
-
-            if (curConPt != null)
-                connectionPoints.Add(curConPt);
-            else
-                Debug.LogError("Failed to find connection point \"" + _connectPointID[cpID] + "\".");
+            case EDominanceType.COMPLETE: ApplyComplete(); break;
+            case EDominanceType.INCOMPLETE: ApplyIncomplete(); break;
+            default: Debug.LogError("Dominance type " + gene.DominanceType.ToString() + " is unimplemented."); break;
         }
     }
 
-    //-----------------------------------------------------------------------------------------------------------------
+    //Applies the allele with the most dominance (lowest index).
+    private void ApplyComplete()
+    {
+        GetDominantAllele().ApplyComplete(parent);
+    }
+
+    //Applies both alleles.
+    private void ApplyIncomplete()
+    {
+        _allele1.ApplyIncomplete(parent, 0);
+        _allele2.ApplyIncomplete(parent, 1);
+    }
+
+    //Returns the allele with the highest dominance.
+    private SO_Allele GetDominantAllele()
+        => (gene.FindAllele(_allele1) < gene.FindAllele(_allele2))? _allele1 : _allele2;
 }
+
