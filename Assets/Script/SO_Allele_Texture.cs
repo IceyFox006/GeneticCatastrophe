@@ -17,8 +17,6 @@ public class SO_Allele_Texture : SO_Allele
     private Dictionary<string, Texture> _texData;
 
     //TEXTURE
-    [SerializeField, BoxGroup("Texture")]
-    private Material _mat;
     [SerializeField, BoxGroup("Texture"), Label("Texture ID")]
     private string _texID = "_Tex_";
 
@@ -31,8 +29,6 @@ public class SO_Allele_Texture : SO_Allele
         mrs = p.GetComponentsInChildren<MeshRenderer>();
         foreach (MeshRenderer mr in mrs)
         {
-            mr.material = _mat;
-
             if (!_texData.ContainsKey(p.name)) //Check if the data has the key of the body stored in it.
             {
                 Debug.LogError(p.name + " does not match the name of any of the textures.");

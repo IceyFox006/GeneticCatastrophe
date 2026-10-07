@@ -13,11 +13,18 @@ using UnityEngine;
 public class GeneController : Manager
 {
     //GENOTYPES
-    [SerializeField]
+    [SerializeField, BoxGroup("Genotype")]
     private Dictionary<SO_Gene, ActGene> _modelGenotype;
 
-    [SerializeField]
+    [SerializeField, BoxGroup("Genotype")]
     private Dictionary<SO_Gene, ActGene> _textureGenotype;
+
+    [SerializeField, BoxGroup("Genotype")]
+    private Dictionary<SO_Gene, ActGene> _colorGenotype;
+
+    //VISUAL
+    [SerializeField, BoxGroup("Visual"), Label("Genetics Material")]
+    private Material _mat;
 
     public override void Initialize()
     {
@@ -37,7 +44,16 @@ public class GeneController : Manager
         }
 
         //Texture
+        foreach (MeshRenderer mr in transform.GetComponentsInChildren<MeshRenderer>())
+            mr.material = _mat;
         foreach (KeyValuePair<SO_Gene, ActGene> kvp in _textureGenotype)
+        {
+            kvp.Value.Initialize(kvp.Key, transform);
+            kvp.Value.Apply();
+        }
+
+        //Color
+        foreach (KeyValuePair<SO_Gene, ActGene> kvp in _colorGenotype)
         {
             kvp.Value.Initialize(kvp.Key, transform);
             kvp.Value.Apply();
@@ -70,6 +86,7 @@ public class ActGene
         switch (gene.DominanceType)
         {
             case EDominanceType.COMPLETE: ApplyComplete(); break;
+            case EDominanceType.INCOMPLETE: ApplyIncomplete(); break;
             default: Debug.LogError("Dominance type " + gene.DominanceType.ToString() + " is unimplemented."); break;
         }
     }
@@ -78,6 +95,13 @@ public class ActGene
     private void ApplyComplete()
     {
         GetDominantAllele().ApplyComplete(parent);
+    }
+
+    //Applies both alleles.
+    private void ApplyIncomplete()
+    {
+        _allele1.ApplyIncomplete(parent, 1);
+        _allele2.ApplyIncomplete(parent, 2);
     }
 
     //Returns the allele with the highest dominance.

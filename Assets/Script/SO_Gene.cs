@@ -35,6 +35,7 @@ public class SO_Gene : ScriptableObject
         {
             if (_alleles[i] == null) continue; //Null check.
 
+            _alleles[i].DominanceType = _dominanceType;
             _alleles[i].Dominance = i;
         }
     }
