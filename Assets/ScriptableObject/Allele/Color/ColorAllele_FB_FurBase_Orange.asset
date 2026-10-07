@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58beab42bc3d1b64981f335dd7a1b8cc, type: 3}
+  m_Name: ColorAllele_FB_FurBase_Orange
+  m_EditorClassIdentifier: Assembly-CSharp::SO_Allele_Color
+  _name: Orange
+  _description: 
+  _colorData:
+  - key: {fileID: 11400000, guid: d57a7d37776ca654698e4ab0ef8b04f7, type: 2}
+    value: {fileID: 11400000, guid: 75f29a5e9caabfc4db7a06def3b64ca0, type: 2}
+  - key: {fileID: 11400000, guid: 0895359db0a63ac4b964dc59e6821b85, type: 2}
+    value: {fileID: 11400000, guid: 75f29a5e9caabfc4db7a06def3b64ca0, type: 2}
+  _colorIDs:
+  - _Color_FurBase1
+  - _Color_FurBase2

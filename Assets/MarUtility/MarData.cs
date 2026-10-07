@@ -70,7 +70,23 @@ namespace MarUtility
         public static Vector2Int ToVector2Int(Vector3Int value)
             => new Vector2Int(value.x, value.y);
         #endregion
-        
+
+        #region ToVector3
+        public static Vector3 ToVector3(EDirection3D dir)
+        {
+            switch (dir)
+            {
+                case EDirection3D.UP: return Vector3.up;
+                case EDirection3D.DOWN: return Vector3.down;
+                case EDirection3D.LEFT: return Vector3.left;
+                case EDirection3D.RIGHT: return Vector3.right;
+                case EDirection3D.FORWARD: return Vector3.forward;
+                case EDirection3D.BACKWARD: return Vector3.back;
+            }
+            return Vector2.zero;
+        }
+        #endregion
+
         #region ToString
         public static string ToString(Vector2 value)
             => "[" + value.x + "," + value.y + "]";
@@ -81,6 +97,22 @@ namespace MarUtility
             => "[" + value.x + "," + value.y + "," + value.z + "]";
         public static string ToString(Vector3 value)
             => "[" + value.x + "," + value.y + "," + value.z + "]";
+        #endregion
+
+        #region Material
+        //Sets the texture of a material. If the textureID is missing sends an error and returns.
+        public static void SetTexture(MeshRenderer mr, string texID, Texture tex)
+        {
+            if (!DebugMessages.MaterialHasTexture(mr, texID)) return;
+            mr.material.SetTexture(texID, tex);
+        }
+
+        //Sets the color of a material. If the colorID is missing sends an error and returns.
+        public static void SetColor(MeshRenderer mr, string colorID, Color color)
+        {
+            if (!DebugMessages.MaterialHasColor(mr, colorID)) return;
+            mr.material.SetColor(colorID, color);
+        }
         #endregion
     }
 

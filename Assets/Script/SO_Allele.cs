@@ -1,19 +1,23 @@
+/*
+ * Marlow Greenan
+ * Created: 10/06/2026
+ * Last Updated: 10/06/1026 by Marlow Greenan
+ * 
+ * Contains data for an allele. Must be a subtype to be created.
+ */
 using NaughtyAttributes;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "Allele_", menuName = "Scriptable Objects/Genetics/Allele")]
 public class SO_Allele : ScriptableObject
 {
-    //GENERAL
     [SerializeField, BoxGroup("General")]
     protected string _name;
-
     [SerializeField, BoxGroup("General"), ResizableTextArea]
     protected string _description;
 
-    protected EGeneType geneType;
+    //Dictionary<string, TYPE> data containing information for what object it affects and how it is effecting it.
 
-    public virtual EGeneType GeneType { get => geneType; }
-
-    public virtual void ApplyToPhenotype(ActGene actGene) { }
+    //Applies the allele.
+    public virtual void ApplyComplete(Transform p) { }
+    public virtual void ApplyIncomplete(Transform p, int aNum) { }
 }

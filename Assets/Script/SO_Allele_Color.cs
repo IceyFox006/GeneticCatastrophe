@@ -1,18 +1,60 @@
+/*
+ * Marlow Greenan
+ * Created: 10/07/2026
+ * Last Updated: 10/07/1026 by Marlow Greenan
+ * 
+ * Contains data for a color allele.
+ */
+using NaughtyAttributes;
+using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "ColorAllele_", menuName = "Scriptable Objects/Genetics/Allele Color")]
+[CreateAssetMenu(fileName = "ColorAllele_", menuName = "Scriptable Objects/Genetics/Allele/Color")]
 public class SO_Allele_Color : SO_Allele
 {
-    [SerializeField]
-    private Color _color;
+    [SerializeField, BoxGroup("General"), Tooltip("Key is the color being replaced.")]
+    private Dictionary<SO_Color, SO_Color> _colorData;
 
-    #region GS
-    public override EGeneType GeneType { get => EGeneType.COLOR; }
-    #endregion
+    //COLOR
+    [SerializeField, BoxGroup("Color")]
+    private string[] _colorIDs;
 
-    //Spawns the model for the gene at the connection point.
-    public override void ApplyToPhenotype(ActGene actGene)
+    //Applies the allele to both colorID regions.
+    public override void ApplyComplete(Transform p)
     {
+        foreach (string id in _colorIDs)
+            ApplyColor(p, id);
+    }
 
+    //Applies the allele to only one colorID region.
+    public override void ApplyIncomplete(Transform p ,int aNum)
+    {
+        if (!(aNum > -1 && aNum < _colorIDs.Length))
+        {
+            Debug.LogError("Allele number " + aNum + " is out of range.");
+            return;
+        }
+
+        ApplyColor(p, _colorIDs[aNum]);
+    }
+
+    //Replaces colors on the material with the new allele color.
+    private void ApplyColor(Transform p, string id)
+    {
+        if (_colorData.Count <= 0) return;
+
+        foreach (MeshRenderer mr in p.GetComponentsInChildren<MeshRenderer>())
+        {
+            if (!mr.material.HasColor(id)) continue;
+            
+            foreach (KeyValuePair<SO_Color, SO_Color> kvp in _colorData)
+            {
+                if (kvp.Key.Color == mr.material.GetColor(id))
+                {
+                    mr.material.SetColor(id, kvp.Value.Color);
+                    break;
+                }
+            }
+        }
     }
 }

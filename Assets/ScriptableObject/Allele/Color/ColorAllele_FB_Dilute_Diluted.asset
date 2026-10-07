@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58beab42bc3d1b64981f335dd7a1b8cc, type: 3}
+  m_Name: ColorAllele_FB_Dilute_Diluted
+  m_EditorClassIdentifier: Assembly-CSharp::SO_Allele_Color
+  _name: Diluted
+  _description: 
+  _colorData:
+  - key: {fileID: 11400000, guid: 75f29a5e9caabfc4db7a06def3b64ca0, type: 2}
+    value: {fileID: 11400000, guid: 62dff19ccf3718f45a36fad1b7870a2b, type: 2}
+  - key: {fileID: 11400000, guid: c933be527ea172d4d939b83b52b0fccb, type: 2}
+    value: {fileID: 11400000, guid: 6cdc8993d4451474691d2f8a535dfe43, type: 2}
+  - key: {fileID: 11400000, guid: c5402aa3f95baf54cb4a19486c6d52bb, type: 2}
+    value: {fileID: 11400000, guid: d73f79c2b945e3641aa3ff95c8963d88, type: 2}
+  - key: {fileID: 11400000, guid: 7c0acbfd468fa764291a7b5771de052d, type: 2}
+    value: {fileID: 11400000, guid: 24bd16857e376e74b9690e8a8ddb5d59, type: 2}
+  _colorIDs:
+  - _Color_FurBase1
+  - _Color_FurBase2
