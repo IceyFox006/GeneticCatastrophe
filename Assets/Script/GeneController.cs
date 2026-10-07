@@ -12,29 +12,36 @@ using UnityEngine;
 
 public class GeneController : Manager
 {
-    [SerializeField, OnValueChanged("OnVC_ModelGenotype")]
+    //GENOTYPES
+    [SerializeField]
     private Dictionary<SO_Gene, ActGene> _modelGenotype;
+
+    [SerializeField]
+    private Dictionary<SO_Gene, ActGene> _textureGenotype;
 
     public override void Initialize()
     {
         base.Initialize();
 
-        InitializeGenotypes();
-        ApplyGenotypes();
+        InitializeAndApplyGenotypes();
     }
     
-    //Initializes all genotypes.
-    private void InitializeGenotypes()
+    //Initializes and applies all genotypes.
+    private void InitializeAndApplyGenotypes()
     {
+        //Model
         foreach (KeyValuePair<SO_Gene, ActGene> kvp in _modelGenotype)
+        {
             kvp.Value.Initialize(kvp.Key, transform);
-    }
-
-    //Applies all genotypes (spawns models, sets textures, and switches colors).
-    private void ApplyGenotypes()
-    {
-        foreach (KeyValuePair<SO_Gene, ActGene> kvp in _modelGenotype)
             kvp.Value.Apply();
+        }
+
+        //Texture
+        foreach (KeyValuePair<SO_Gene, ActGene> kvp in _textureGenotype)
+        {
+            kvp.Value.Initialize(kvp.Key, transform);
+            kvp.Value.Apply();
+        }
     }
 }
 //=====================================================================================================================
@@ -46,6 +53,7 @@ public class ActGene
     private SO_Gene gene;
     private Transform parent;
 
+    //ALLELES
     [SerializeField]
     private SO_Allele _allele1;
     [SerializeField]

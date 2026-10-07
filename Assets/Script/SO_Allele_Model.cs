@@ -13,7 +13,7 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "MoAllele_", menuName = "Scriptable Objects/Genetics/Allele/Model")]
 public class SO_Allele_Model : SO_Allele
 {
-    [SerializeField, BoxGroup("Model"), Tooltip("Key is the connection point name (the game object the model will spawn as a child of).")]
+    [SerializeField, BoxGroup("General"), Tooltip("Key is the connection point name (the game object the model will spawn as a child of).")]
     private Dictionary<string, GameObject> _moData;
 
     //Spawn models under their connection points.

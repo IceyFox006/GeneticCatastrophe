@@ -98,6 +98,22 @@ namespace MarUtility
         public static string ToString(Vector3 value)
             => "[" + value.x + "," + value.y + "," + value.z + "]";
         #endregion
+
+        #region Material
+        //Sets the texture of a material. If the textureID is missing sends an error and returns.
+        public static void SetTexture(MeshRenderer mr, string texID, Texture tex)
+        {
+            if (!DebugMessages.MaterialHasTexture(mr, texID)) return;
+            mr.material.SetTexture(texID, tex);
+        }
+
+        //Sets the color of a material. If the colorID is missing sends an error and returns.
+        public static void SetColor(MeshRenderer mr, string colorID, Color color)
+        {
+            if (!DebugMessages.MaterialHasColor(mr, colorID)) return;
+            mr.material.SetColor(colorID, color);
+        }
+        #endregion
     }
 
     #region Enums

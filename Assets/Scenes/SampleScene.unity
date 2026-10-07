@@ -205,8 +205,13 @@ MonoBehaviour:
   _modelGenotype:
   - key: {fileID: 11400000, guid: fa0178282ccca4c49814cc4c56a6e372, type: 2}
     value:
-      _allele1: {fileID: 11400000, guid: d8be68ebc1f572c498ef240b97f9a8d6, type: 2}
+      _allele1: {fileID: 11400000, guid: a19f10a6199cb6f4b914ab41c6713bf2, type: 2}
       _allele2: {fileID: 11400000, guid: d8be68ebc1f572c498ef240b97f9a8d6, type: 2}
+  _textureGenotype:
+  - key: {fileID: 11400000, guid: 4ed5ecf9ed72c5e42bdaa4b034c20f5e, type: 2}
+    value:
+      _allele1: {fileID: 11400000, guid: f3cc7eac5f6a40e42b6087b2e4903871, type: 2}
+      _allele2: {fileID: 11400000, guid: 818060587cc4882488d2dad79c232e08, type: 2}
 --- !u!1 &330585543
 GameObject:
   m_ObjectHideFlags: 0

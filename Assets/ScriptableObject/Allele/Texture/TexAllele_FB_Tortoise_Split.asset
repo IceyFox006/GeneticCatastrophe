@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a44857d929de91409bd66262024fa28, type: 3}
+  m_Name: TexAllele_FB_Tortoise_Split
+  m_EditorClassIdentifier: Assembly-CSharp::SO_Allele_Texture
+  _name: Split
+  _description: 
+  _texData:
+  - key: Mo_FB_Body
+    value: {fileID: 2800000, guid: 1476dff8fbfce164a8482841adc202ff, type: 3}
+  - key: Mo_FB_Tail_Long
+    value: {fileID: 2800000, guid: 542c0d1b60b8e784bae7e7f7465bd42d, type: 3}
+  - key: Mo_FB_Tail_Bob
+    value: {fileID: 2800000, guid: a435e2d3d74b9b248bc92ccc2d453898, type: 3}
+  _mat: {fileID: 2100000, guid: da9860eeccb86b14cae35d4a90199066, type: 2}
+  _texID: _Tex_Tortoise
