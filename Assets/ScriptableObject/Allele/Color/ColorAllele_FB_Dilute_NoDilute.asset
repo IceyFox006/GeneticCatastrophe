@@ -10,15 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 58beab42bc3d1b64981f335dd7a1b8cc, type: 3}
-  m_Name: ColorAllele_FB_FurBase_Black
+  m_Name: ColorAllele_FB_Dilute_NoDilute
   m_EditorClassIdentifier: Assembly-CSharp::SO_Allele_Color
-  _name: Black
+  _name: No Dilute
   _description: 
-  _colorData:
-  - key: {fileID: 11400000, guid: 0895359db0a63ac4b964dc59e6821b85, type: 2}
-    value: {fileID: 11400000, guid: c933be527ea172d4d939b83b52b0fccb, type: 2}
-  - key: {fileID: 11400000, guid: d57a7d37776ca654698e4ab0ef8b04f7, type: 2}
-    value: {fileID: 11400000, guid: c933be527ea172d4d939b83b52b0fccb, type: 2}
+  _colorData: []
   _colorIDs:
   - _Color_FurBase1
   - _Color_FurBase2

@@ -11,22 +11,32 @@ public class SO_Allele_Color : SO_Allele
 
     //COLOR
     [SerializeField, BoxGroup("Color")]
-    private string _colorID1 = "_Color_";
-    [SerializeField, BoxGroup("Color"), ShowIf("dominanceType", EDominanceType.INCOMPLETE)]
-    private string _colorID2 = "_Color_";
+    private string[] _colorIDs;
 
-    public override void ApplyIncomplete(Transform p ,int aNum)
+    //Applies the allele to both colorID regions.
+    public override void ApplyComplete(Transform p)
     {
-        switch (aNum)
-        {
-            case 1: ApplyColor(p, _colorID1); break;
-            case 2: ApplyColor(p, _colorID2); break;
-            default: Debug.LogError("Allele numer " + aNum + " is out of range."); return;
-        }
+        foreach (string id in _colorIDs)
+            ApplyColor(p, id);
     }
 
+    //Applies the allele to only one colorID region.
+    public override void ApplyIncomplete(Transform p ,int aNum)
+    {
+        if (!(aNum > -1 && aNum < _colorIDs.Length))
+        {
+            Debug.LogError("Allele number " + aNum + " is out of range.");
+            return;
+        }
+
+        ApplyColor(p, _colorIDs[aNum]);
+    }
+
+    //Replaces colors on the material with the new allele color.
     private void ApplyColor(Transform p, string id)
     {
+        if (_colorData.Count <= 0) return;
+
         foreach (MeshRenderer mr in p.GetComponentsInChildren<MeshRenderer>())
         {
             if (!mr.material.HasColor(id)) continue;

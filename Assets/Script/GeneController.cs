@@ -100,8 +100,8 @@ public class ActGene
     //Applies both alleles.
     private void ApplyIncomplete()
     {
-        _allele1.ApplyIncomplete(parent, 1);
-        _allele2.ApplyIncomplete(parent, 2);
+        _allele1.ApplyIncomplete(parent, 0);
+        _allele2.ApplyIncomplete(parent, 1);
     }
 
     //Returns the allele with the highest dominance.

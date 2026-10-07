@@ -19,5 +19,6 @@ MonoBehaviour:
     value: {fileID: 11400000, guid: 75f29a5e9caabfc4db7a06def3b64ca0, type: 2}
   - key: {fileID: 11400000, guid: 0895359db0a63ac4b964dc59e6821b85, type: 2}
     value: {fileID: 11400000, guid: 75f29a5e9caabfc4db7a06def3b64ca0, type: 2}
-  _colorID1: _Color_FurBase1
-  _colorID2: _Color_FurBase2
+  _colorIDs:
+  - _Color_FurBase1
+  - _Color_FurBase2
