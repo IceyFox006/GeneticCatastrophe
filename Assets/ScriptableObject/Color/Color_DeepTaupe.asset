@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 36b444b892cccb645a45f42257119272, type: 3}
-  m_Name: Color_Sable
+  m_Name: Color_DeepTaupe
   m_EditorClassIdentifier: Assembly-CSharp::SO_Color
-  _name: Sable
-  _color: {r: 0.023529412, g: 0.023529412, b: 0.023529412, a: 1}
+  _name: Deep Taupe
+  _color: {r: 0.4862745, g: 0.4117647, b: 0.3764706, a: 1}

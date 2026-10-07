@@ -20,26 +20,23 @@ public class SO_Gene : ScriptableObject
     [SerializeField]
     private EDominanceType _dominanceType;
 
-    [SerializeField, OnValueChanged("OnVC_Alleles")]
+    [SerializeField]
     private SO_Allele[] _alleles;
 
     #region GS
     public EDominanceType DominanceType { get => _dominanceType; }
     #endregion
 
-    #region Inspector
-    //Updates the dominance of the alleles based on their array index. Lower index = higher dominance.
-    private void OnVC_Alleles()
+    //Returns the index of the allele.
+    public int FindAllele(SO_Allele a)
     {
         for (int i = 0; i < _alleles.Length; i++)
         {
-            if (_alleles[i] == null) continue; //Null check.
-
-            _alleles[i].DominanceType = _dominanceType;
-            _alleles[i].Dominance = i;
+            if (_alleles[i] == a)
+                return i;
         }
+        return -1;
     }
-    #endregion
 }
 
 public enum EDominanceType

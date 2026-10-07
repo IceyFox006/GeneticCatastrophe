@@ -219,8 +219,16 @@ MonoBehaviour:
       _allele2: {fileID: 11400000, guid: 8fca4d8d2cdb3094381a8a05a37e85ac, type: 2}
   - key: {fileID: 11400000, guid: 88045d18e5ac5c246b6c8dba05954206, type: 2}
     value:
-      _allele1: {fileID: 11400000, guid: c76142950cc4b2948902d8844d75cdc3, type: 2}
+      _allele1: {fileID: 11400000, guid: dbf6d56117e15824db4b96c07fc6f0d0, type: 2}
       _allele2: {fileID: 11400000, guid: c76142950cc4b2948902d8844d75cdc3, type: 2}
+  - key: {fileID: 11400000, guid: f8c94b85c2497ef4ea92ba2c737e9510, type: 2}
+    value:
+      _allele1: {fileID: 11400000, guid: 9b2d764517c486b4e97f37740bfdc092, type: 2}
+      _allele2: {fileID: 11400000, guid: eee592beba6c92f42a833299848ace48, type: 2}
+  - key: {fileID: 11400000, guid: a424480c70e713a4e9a5512cae5794df, type: 2}
+    value:
+      _allele1: {fileID: 11400000, guid: cc069f4bffac24949b7b64d6bcd71a1d, type: 2}
+      _allele2: {fileID: 11400000, guid: f8d75fa3e3f41c8439e4bcbfc86bbfd0, type: 2}
   _mat: {fileID: -876546973899608171, guid: ee05aa01384605c449a9701ba49f4cd7, type: 3}
 --- !u!1 &330585543
 GameObject:

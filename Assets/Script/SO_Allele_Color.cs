@@ -1,4 +1,10 @@
-using MarUtility;
+/*
+ * Marlow Greenan
+ * Created: 10/07/2026
+ * Last Updated: 10/07/1026 by Marlow Greenan
+ * 
+ * Contains data for a color allele.
+ */
 using NaughtyAttributes;
 using System.Collections.Generic;
 using UnityEngine;

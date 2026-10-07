@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 36b444b892cccb645a45f42257119272, type: 3}
-  m_Name: Color_Lava
+  m_Name: Color_SalmonSand
   m_EditorClassIdentifier: Assembly-CSharp::SO_Color
-  _name: Lava
-  _color: {r: 0.96862745, g: 0.40784314, b: 0.023529412, a: 1}
+  _name: Salmon Sand
+  _color: {r: 0.84705883, g: 0.6784314, b: 0.56078434, a: 1}

@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 36b444b892cccb645a45f42257119272, type: 3}
-  m_Name: Color_Cinnamon
+  m_Name: Color_BrownEyedGirl
   m_EditorClassIdentifier: Assembly-CSharp::SO_Color
-  _name: Cinnamon
-  _color: {r: 0.8235294, g: 0.4117647, b: 0.11764706, a: 1}
+  _name: Brown Eyed Girl
+  _color: {r: 0.5411765, g: 0.30588236, b: 0.09411765, a: 1}

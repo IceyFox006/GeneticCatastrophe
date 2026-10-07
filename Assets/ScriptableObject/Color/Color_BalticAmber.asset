@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 36b444b892cccb645a45f42257119272, type: 3}
-  m_Name: Color_Fawn
+  m_Name: Color_BalticAmber
   m_EditorClassIdentifier: Assembly-CSharp::SO_Color
-  _name: Fawn
-  _color: {r: 0.8980392, g: 0.6666667, b: 0.4392157, a: 1}
+  _name: Baltic Amber
+  _color: {r: 1, g: 0.70980394, b: 0.5137255, a: 1}

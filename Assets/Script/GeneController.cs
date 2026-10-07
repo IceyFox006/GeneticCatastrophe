@@ -106,6 +106,6 @@ public class ActGene
 
     //Returns the allele with the highest dominance.
     private SO_Allele GetDominantAllele()
-        => (_allele1.Dominance < _allele2.Dominance)? _allele1 : _allele2;
+        => (gene.FindAllele(_allele1) < gene.FindAllele(_allele2))? _allele1 : _allele2;
 }
 

@@ -15,16 +15,6 @@ public class SO_Allele : ScriptableObject
     [SerializeField, BoxGroup("General"), ResizableTextArea]
     protected string _description;
 
-    [ShowNonSerializedField]
-    protected EDominanceType dominanceType;
-    [ShowNonSerializedField]
-    private int dominance = -1;
-
-    #region GS
-    public int Dominance { get => dominance; set => dominance = value; }
-    public EDominanceType DominanceType { get => dominanceType; set => dominanceType = value; }
-    #endregion
-
     //Dictionary<string, TYPE> data containing information for what object it affects and how it is effecting it.
 
     //Applies the allele.
