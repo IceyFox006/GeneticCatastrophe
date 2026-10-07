@@ -1,10 +1,11 @@
 /*
  * Marlow Greenan
  * Created: 04/19/2026 by Marlow Greenan
- * Last Updated: 08/19/2026
+ * Last Updated: 09/27/2026
  * 
  * Contains various reuable enums.
  */
+using NUnit.Framework;
 using UnityEngine;
 
 namespace MarUtility
@@ -30,6 +31,37 @@ namespace MarUtility
         public static Vector3Int[] Direction3DVec3Int { get => direction3DVec3Int; }
         #endregion
 
+        //Returns the child of parent that has the name. If none exists, returns null.
+        public static Transform FindChildWithName(Transform parent, string name)
+        {
+            foreach (Transform child in parent)
+            {
+                if (child.name == name)
+                    return child;
+                else
+                {
+                    Transform found = FindChildWithName(child, name);
+                    if (found != null)
+                        return found;
+                }
+            }
+            return null;
+        }
+
+        #region ToVector2
+        public static Vector2 ToVector2(EDirection2D dir)
+        {
+            switch (dir)
+            {
+                case EDirection2D.UP: return Vector2.up;
+                case EDirection2D.DOWN: return Vector2.down;
+                case EDirection2D.LEFT: return Vector2.left;
+                case EDirection2D.RIGHT: return Vector2.right;
+            }
+            return Vector2.zero;
+        }
+        #endregion
+
         #region ToVector2Int
         public static Vector2Int ToVector2Int(Vector2 value)
             => new Vector2Int((int)value.x, (int)value.y);
@@ -38,7 +70,23 @@ namespace MarUtility
         public static Vector2Int ToVector2Int(Vector3Int value)
             => new Vector2Int(value.x, value.y);
         #endregion
-        
+
+        #region ToVector3
+        public static Vector3 ToVector3(EDirection3D dir)
+        {
+            switch (dir)
+            {
+                case EDirection3D.UP: return Vector3.up;
+                case EDirection3D.DOWN: return Vector3.down;
+                case EDirection3D.LEFT: return Vector3.left;
+                case EDirection3D.RIGHT: return Vector3.right;
+                case EDirection3D.FORWARD: return Vector3.forward;
+                case EDirection3D.BACKWARD: return Vector3.back;
+            }
+            return Vector2.zero;
+        }
+        #endregion
+
         #region ToString
         public static string ToString(Vector2 value)
             => "[" + value.x + "," + value.y + "]";
@@ -51,7 +99,9 @@ namespace MarUtility
             => "[" + value.x + "," + value.y + "," + value.z + "]";
         #endregion
     }
-    public enum Direction
+
+    #region Enums
+    public enum EDirection3D
     {
         UP,
         DOWN,
@@ -60,22 +110,32 @@ namespace MarUtility
         FORWARD,
         BACKWARD,
     }
-    public enum FrontBack
+
+    public enum EDirection2D
+    {
+        UP,
+        DOWN,
+        LEFT,
+        RIGHT,
+    }
+
+    public enum EFrontBack
     {
         FRONT,
         BACK,
     }
 
-    public enum Dimension
+    public enum EDimension
     {
         _2D,
         _3D,
     }
 
-    public enum SetValue
+    public enum ESetValue
     {
         NULL,
         THIS,
     }
+    #endregion
 }
 
