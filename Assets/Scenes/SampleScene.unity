@@ -219,6 +219,10 @@ MonoBehaviour:
     value:
       _allele1: {fileID: 11400000, guid: cf48633e9c499b64482366819431d845, type: 2}
       _allele2: {fileID: 11400000, guid: cf48633e9c499b64482366819431d845, type: 2}
+  - key: {fileID: 11400000, guid: 28969320cf0ab474f9efe910b8a16384, type: 2}
+    value:
+      _allele1: {fileID: 11400000, guid: acd95198cfe294a42b617fce2275e8e0, type: 2}
+      _allele2: {fileID: 11400000, guid: acd95198cfe294a42b617fce2275e8e0, type: 2}
   _textureGenotype:
   - key: {fileID: 11400000, guid: 4ed5ecf9ed72c5e42bdaa4b034c20f5e, type: 2}
     value:
