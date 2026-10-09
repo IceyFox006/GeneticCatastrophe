@@ -39,17 +39,20 @@ public class SO_Allele_Texture : SO_Allele
         }
 
         //Set part textures.
-        Transform parent;
+        List<Transform> parent;
         foreach (KeyValuePair<string, Texture> kvp in _texData)
         {
             if (kvp.Key.Equals(p.name)) continue; //Skip applying to body (already applied).
 
-            parent = MarData.FindChildWithName(p, kvp.Key + "(Clone)");
+            parent = MarData.FindChildrenWithName(p, kvp.Key + "(Clone)");
             if (parent == null) continue;
 
-            mrs = parent.GetComponentsInChildren<MeshRenderer>();
-            foreach (MeshRenderer mr in mrs)
-                MarData.SetTexture(mr, _texID, kvp.Value);
+            foreach (Transform c in parent)
+            {
+                mrs = c.GetComponentsInChildren<MeshRenderer>();
+                foreach (MeshRenderer mr in mrs)
+                    MarData.SetTexture(mr, _texID, kvp.Value);
+            }
         }
     }
 }

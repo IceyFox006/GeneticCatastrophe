@@ -6,6 +6,7 @@
  * Contains various reuable enums.
  */
 using NUnit.Framework;
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace MarUtility
@@ -46,6 +47,22 @@ namespace MarUtility
                 }
             }
             return null;
+        }
+
+        public static List<Transform> FindChildrenWithName(Transform parent, string name)
+        {
+            List<Transform> children = new List<Transform>();
+            foreach (Transform child in parent)
+            {
+                if (child.name == name)
+                    children.Add(child);
+                else
+                {
+                    foreach (Transform c in FindChildrenWithName(child, name))
+                        children.Add(c);
+                }
+            }
+            return children;
         }
 
         #region ToVector2
