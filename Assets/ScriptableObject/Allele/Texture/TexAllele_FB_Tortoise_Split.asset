@@ -21,5 +21,12 @@ MonoBehaviour:
     value: {fileID: 2800000, guid: 542c0d1b60b8e784bae7e7f7465bd42d, type: 3}
   - key: Mo_FB_Tail_Bob
     value: {fileID: 2800000, guid: a435e2d3d74b9b248bc92ccc2d453898, type: 3}
-  _mat: {fileID: 2100000, guid: da9860eeccb86b14cae35d4a90199066, type: 2}
+  - key: Mo_FB_Ear_Cat
+    value: {fileID: 2800000, guid: fe209a70e7382844ba952c0c92cd3b73, type: 3}
+  - key: Mo_FB_Whisker_Short
+    value: {fileID: 2800000, guid: d5faafe649626624fb4870a69f168643, type: 3}
+  - key: Mo_FB_Whisker_Medium
+    value: {fileID: 2800000, guid: d5faafe649626624fb4870a69f168643, type: 3}
+  - key: Mo_FB_Whisker_Long
+    value: {fileID: 2800000, guid: d5faafe649626624fb4870a69f168643, type: 3}
   _texID: _Tex_Tortoise

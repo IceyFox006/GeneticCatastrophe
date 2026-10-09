@@ -167,6 +167,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -2944712875340054802, guid: a7f6dc7fb59593548a27bff9494126e5, type: 3}
+      propertyPath: m_LocalScale.x
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: a7f6dc7fb59593548a27bff9494126e5, type: 3}
       propertyPath: m_Name
       value: Mo_FB_Body
@@ -211,6 +215,10 @@ MonoBehaviour:
     value:
       _allele1: {fileID: 11400000, guid: 78ece25bda6a5ef4aaa2807907d3c861, type: 2}
       _allele2: {fileID: 11400000, guid: 78ece25bda6a5ef4aaa2807907d3c861, type: 2}
+  - key: {fileID: 11400000, guid: 09ccd6bedcc8b5b499bb4df9a6b30cf8, type: 2}
+    value:
+      _allele1: {fileID: 11400000, guid: cf48633e9c499b64482366819431d845, type: 2}
+      _allele2: {fileID: 11400000, guid: cf48633e9c499b64482366819431d845, type: 2}
   _textureGenotype:
   - key: {fileID: 11400000, guid: 4ed5ecf9ed72c5e42bdaa4b034c20f5e, type: 2}
     value:

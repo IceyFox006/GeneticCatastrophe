@@ -10,10 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d6f2d382503a4094bb7ecf6228725d5c, type: 3}
-  m_Name: Gene_FB_Ear
+  m_Name: Gene_FB_Whisker
   m_EditorClassIdentifier: Assembly-CSharp::SO_Gene
-  _name: Ear
+  _name: Whisker
   _description: 
   _dominanceType: 0
   _alleles:
-  - {fileID: 11400000, guid: 78ece25bda6a5ef4aaa2807907d3c861, type: 2}
+  - {fileID: 11400000, guid: 0685a13ce73a73341bb1533d84cb903a, type: 2}
+  - {fileID: 11400000, guid: e7e8627387636e24b8d601416688e070, type: 2}
+  - {fileID: 11400000, guid: cf48633e9c499b64482366819431d845, type: 2}
