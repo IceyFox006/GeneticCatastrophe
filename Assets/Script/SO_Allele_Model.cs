@@ -17,20 +17,22 @@ public class SO_Allele_Model : SO_Allele
     private Dictionary<string, GameObject> _moData;
 
     //Spawn models under their connection points.
-    public override void ApplyComplete(Transform p)
+    public override void ApplyComplete(GeneController gc, out List<Transform> affected)
     {
+        base.ApplyComplete(gc, out affected);
+
         Transform parent;
         foreach (KeyValuePair<string, GameObject> kvp in _moData)
         {
-            parent = MarData.FindChildWithName(p, kvp.Key); //Find connection point.
+            parent = MarData.FindChildWithName(gc.transform, kvp.Key); //Find connection point.
 
             if (parent == null) //Null catch.
             {
-                Debug.LogError("Cannot apply model allele " + _name + ".\n" + p.name + " does not have a connection point named " + kvp.Key + ".");
+                Debug.LogError("Cannot apply model allele " + _name + ".\n" + gc.name + " does not have a connection point named " + kvp.Key + ".");
                 continue;
             }
 
-            Instantiate(kvp.Value, parent); //Spawn model as a child of the connection point.
+            affected.Add(Instantiate(kvp.Value, parent).transform); //Spawn model as a child of the connection point and add it to the out list.
         }
     }
 }

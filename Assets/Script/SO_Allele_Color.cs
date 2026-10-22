@@ -20,14 +20,16 @@ public class SO_Allele_Color : SO_Allele
     private string[] _colorIDs;
 
     //Applies the allele to both colorID regions.
-    public override void ApplyComplete(Transform p)
+    public override void ApplyComplete(GeneController gc, out List<Transform> affected)
     {
+        base.ApplyComplete(gc, out affected);
+
         foreach (string id in _colorIDs)
-            ApplyColor(p, id);
+            ApplyColor(gc.transform, id);
     }
 
     //Applies the allele to only one colorID region.
-    public override void ApplyIncomplete(Transform p ,int aNum)
+    public override void ApplyIncomplete(GeneController gc ,int aNum)
     {
         if (!(aNum > -1 && aNum < _colorIDs.Length))
         {
@@ -35,7 +37,7 @@ public class SO_Allele_Color : SO_Allele
             return;
         }
 
-        ApplyColor(p, _colorIDs[aNum]);
+        ApplyColor(gc.transform, _colorIDs[aNum]);
     }
 
     //Replaces colors on the material with the new allele color.
