@@ -143,6 +143,7 @@ MonoBehaviour:
     value:
       _allele1: {fileID: 11400000, guid: acd95198cfe294a42b617fce2275e8e0, type: 2}
       _allele2: {fileID: 11400000, guid: acd95198cfe294a42b617fce2275e8e0, type: 2}
+  partTransforms: []
   _textureGenotype:
   - key: {fileID: 11400000, guid: 4ed5ecf9ed72c5e42bdaa4b034c20f5e, type: 2}
     value:
@@ -155,7 +156,7 @@ MonoBehaviour:
       _allele2: {fileID: 11400000, guid: 8fca4d8d2cdb3094381a8a05a37e85ac, type: 2}
   - key: {fileID: 11400000, guid: 88045d18e5ac5c246b6c8dba05954206, type: 2}
     value:
-      _allele1: {fileID: 11400000, guid: dbf6d56117e15824db4b96c07fc6f0d0, type: 2}
+      _allele1: {fileID: 11400000, guid: afb02a5c52b480d4bbcdb1144bf07cba, type: 2}
       _allele2: {fileID: 11400000, guid: c76142950cc4b2948902d8844d75cdc3, type: 2}
   - key: {fileID: 11400000, guid: f8c94b85c2497ef4ea92ba2c737e9510, type: 2}
     value:

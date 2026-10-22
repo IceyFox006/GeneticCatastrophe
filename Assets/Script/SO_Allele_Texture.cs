@@ -21,37 +21,25 @@ public class SO_Allele_Texture : SO_Allele
     private string _texID = "_Tex_";
 
     //Set mesh renderers materials and textures.
-    public override void ApplyComplete(Transform p)
+    public override void ApplyComplete(GeneController gc, out List<Transform> affected)
     {
-        MeshRenderer[] mrs;
+        base.ApplyComplete(gc, out affected);
 
-        //Set material & apply texture to all meshrenderers.
-        mrs = p.GetComponentsInChildren<MeshRenderer>();
-        foreach (MeshRenderer mr in mrs)
-        {
-            if (!_texData.ContainsKey(p.name)) //Check if the data has the key of the body stored in it.
-            {
-                Debug.LogError(p.name + " does not match the name of any of the textures.");
-                break;
-            }
-            
-            MarData.SetTexture(mr, _texID, _texData[p.name]);
-        }
+        //Set body textures.
+        foreach (MeshRenderer bMR in gc.BodyMeshes)
+            MarData.SetTexture(bMR, _texID, _texData[gc.name]);
 
         //Set part textures.
-        List<Transform> parent;
-        foreach (KeyValuePair<string, Texture> kvp in _texData)
+        MeshRenderer[] partRenderers;
+        foreach (Transform pT in gc.PartTransforms)
         {
-            if (kvp.Key.Equals(p.name)) continue; //Skip applying to body (already applied).
-
-            parent = MarData.FindChildrenWithName(p, kvp.Key + "(Clone)");
-            if (parent == null) continue;
-
-            foreach (Transform c in parent)
+            string pKey = MarData.WithoutClone(pT.name);
+            if (_texData.ContainsKey(pKey))
             {
-                mrs = c.GetComponentsInChildren<MeshRenderer>();
-                foreach (MeshRenderer mr in mrs)
-                    MarData.SetTexture(mr, _texID, kvp.Value);
+                partRenderers = pT.GetComponentsInChildren<MeshRenderer>();
+
+                foreach (MeshRenderer mr in partRenderers)
+                    MarData.SetTexture(mr, _texID, _texData[pKey]);
             }
         }
     }

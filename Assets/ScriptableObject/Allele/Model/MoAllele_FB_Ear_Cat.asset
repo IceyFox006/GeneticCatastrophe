@@ -16,6 +16,6 @@ MonoBehaviour:
   _description: 
   _moData:
   - key: ConPt_Ear
-    value: {fileID: 919132149155446097, guid: 4d1da7245b89881448300c7b30f9d05d, type: 3}
+    value: {fileID: 4976031418947747622, guid: 4da1638c4cfdf5149afb464aa1273be0, type: 3}
   - key: ConPt_Ear2
-    value: {fileID: 919132149155446097, guid: 4d1da7245b89881448300c7b30f9d05d, type: 3}
+    value: {fileID: 4976031418947747622, guid: 4da1638c4cfdf5149afb464aa1273be0, type: 3}

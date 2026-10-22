@@ -11,11 +11,11 @@ FBXHeaderExtension:  {
 		Version: 1000
 		Year: 2026
 		Month: 10
-		Day: 21
-		Hour: 19
-		Minute: 14
-		Second: 5
-		Millisecond: 93
+		Day: 22
+		Hour: 11
+		Minute: 59
+		Second: 2
+		Millisecond: 107
 	}
 	Creator: "Blockbench 5.2.2"
 	SceneInfo: "SceneInfo::GlobalInfo", "UserData" {
@@ -49,7 +49,7 @@ FBXHeaderExtension:  {
 	}
 }
 FileId: "iVFoobar"
-CreationTime: "2026-10-22 00:14:05:093"
+CreationTime: "2026-10-22 16:59:02:107"
 Creator: "Made with Blockbench"
 GlobalSettings:  {
 	Version: 1000
@@ -78,7 +78,7 @@ GlobalSettings:  {
 
 Documents:  {
 	Count: 1
-	Document: 1792361332 {
+	Document: 731459326 {
 		Scene: "Scene"
 		Properties70:  {
 			P: "SourceObject", "object", "", ""
@@ -268,7 +268,7 @@ Definitions:  {
 ;------------------------------------------------------------------
 
 Objects:  {
-	Model: 70646083, "Model::Model", "Null" {
+	Model: 73536053, "Model::Model", "Null" {
 		Version: 232
 		Properties70:  {
 			P: "RotationActive", "bool", "", "",1
@@ -282,7 +282,7 @@ Objects:  {
 		Shading: Y
 		Culling: "CullingOff"
 	}
-	Model: 76884939, "Model::Arm", "Null" {
+	Model: 72550843, "Model::Arm", "Null" {
 		Version: 232
 		Properties70:  {
 			P: "RotationActive", "bool", "", "",1
@@ -296,7 +296,7 @@ Objects:  {
 		Shading: Y
 		Culling: "CullingOff"
 	}
-	Model: 72816339, "Model::Body", "Null" {
+	Model: 73200834, "Model::Body", "Null" {
 		Version: 232
 		Properties70:  {
 			P: "RotationActive", "bool", "", "",1
@@ -310,7 +310,7 @@ Objects:  {
 		Shading: Y
 		Culling: "CullingOff"
 	}
-	Model: 74102743, "Model::Head", "Null" {
+	Model: 75517360, "Model::Head", "Null" {
 		Version: 232
 		Properties70:  {
 			P: "RotationActive", "bool", "", "",1
@@ -324,7 +324,7 @@ Objects:  {
 		Shading: Y
 		Culling: "CullingOff"
 	}
-	Model: 71760187, "Model::Leg", "Null" {
+	Model: 77755391, "Model::Leg", "Null" {
 		Version: 232
 		Properties70:  {
 			P: "RotationActive", "bool", "", "",1
@@ -338,7 +338,7 @@ Objects:  {
 		Shading: Y
 		Culling: "CullingOff"
 	}
-	Model: 71447323, "Model::LowArm", "Null" {
+	Model: 73142500, "Model::LowArm", "Null" {
 		Version: 232
 		Properties70:  {
 			P: "RotationActive", "bool", "", "",1
@@ -352,7 +352,7 @@ Objects:  {
 		Shading: Y
 		Culling: "CullingOff"
 	}
-	Model: 73893043, "Model::LowLeg", "Null" {
+	Model: 72238127, "Model::LowLeg", "Null" {
 		Version: 232
 		Properties70:  {
 			P: "RotationActive", "bool", "", "",1
@@ -366,7 +366,7 @@ Objects:  {
 		Shading: Y
 		Culling: "CullingOff"
 	}
-	Model: 72981838, "Model::BodyUpper", "Null" {
+	Model: 79618579, "Model::BodyUpper", "Null" {
 		Version: 232
 		Properties70:  {
 			P: "RotationActive", "bool", "", "",1
@@ -380,7 +380,7 @@ Objects:  {
 		Shading: Y
 		Culling: "CullingOff"
 	}
-	Model: 72441384, "Model::BodyLower", "Null" {
+	Model: 70667083, "Model::BodyLower", "Null" {
 		Version: 232
 		Properties70:  {
 			P: "RotationActive", "bool", "", "",1
@@ -394,7 +394,7 @@ Objects:  {
 		Shading: Y
 		Culling: "CullingOff"
 	}
-	Model: 74685519, "Model::Jaw", "Null" {
+	Model: 79043633, "Model::Jaw", "Null" {
 		Version: 232
 		Properties70:  {
 			P: "RotationActive", "bool", "", "",1
@@ -408,7 +408,7 @@ Objects:  {
 		Shading: Y
 		Culling: "CullingOff"
 	}
-	Model: 78795300, "Model::ConPt_Tongue", "Null" {
+	Model: 73628228, "Model::ConPt_Tongue", "Null" {
 		Version: 232
 		Properties70:  {
 			P: "RotationActive", "bool", "", "",1
@@ -422,7 +422,7 @@ Objects:  {
 		Shading: Y
 		Culling: "CullingOff"
 	}
-	Model: 79989508, "Model::ConPt_Whisker", "Null" {
+	Model: 71163728, "Model::ConPt_Whisker", "Null" {
 		Version: 232
 		Properties70:  {
 			P: "RotationActive", "bool", "", "",1
@@ -436,7 +436,7 @@ Objects:  {
 		Shading: Y
 		Culling: "CullingOff"
 	}
-	Model: 72697349, "Model::ConPt_Whisker2", "Null" {
+	Model: 79895882, "Model::ConPt_Whisker2", "Null" {
 		Version: 232
 		Properties70:  {
 			P: "RotationActive", "bool", "", "",1
@@ -450,7 +450,7 @@ Objects:  {
 		Shading: Y
 		Culling: "CullingOff"
 	}
-	Model: 76014394, "Model::ConPt_Ear", "Null" {
+	Model: 71274058, "Model::ConPt_Ear", "Null" {
 		Version: 232
 		Properties70:  {
 			P: "RotationActive", "bool", "", "",1
@@ -464,7 +464,7 @@ Objects:  {
 		Shading: Y
 		Culling: "CullingOff"
 	}
-	Model: 73926092, "Model::ConPt_Ear2", "Null" {
+	Model: 72136690, "Model::ConPt_Ear2", "Null" {
 		Version: 232
 		Properties70:  {
 			P: "RotationActive", "bool", "", "",1
@@ -478,13 +478,13 @@ Objects:  {
 		Shading: Y
 		Culling: "CullingOff"
 	}
-	Model: 75272916, "Model::ConPt_Eye", "Null" {
+	Model: 70016714, "Model::ConPt_Eye", "Null" {
 		Version: 232
 		Properties70:  {
 			P: "RotationActive", "bool", "", "",1
 			P: "InheritType", "enum", "", "",1
 			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
-			P: "Lcl Translation", "Lcl Translation", "", "A",18.75,9.765625,-55.46875
+			P: "Lcl Translation", "Lcl Translation", "", "A",18.75,9.765625,-52.34375
 			P: "RotationPivot", "Vector3D", "Vector", "",0,0,0
 			P: "Lcl Rotation", "Lcl Rotation", "", "A",0,0,0
 			P: "RotationOrder", "enum", "", "",0
@@ -492,13 +492,13 @@ Objects:  {
 		Shading: Y
 		Culling: "CullingOff"
 	}
-	Model: 72096651, "Model::ConPt_Eye2", "Null" {
+	Model: 78838308, "Model::ConPt_Eye2", "Null" {
 		Version: 232
 		Properties70:  {
 			P: "RotationActive", "bool", "", "",1
 			P: "InheritType", "enum", "", "",1
 			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
-			P: "Lcl Translation", "Lcl Translation", "", "A",-18.75,9.765625,-55.46875
+			P: "Lcl Translation", "Lcl Translation", "", "A",-18.75,9.765625,-52.34375
 			P: "RotationPivot", "Vector3D", "Vector", "",0,0,0
 			P: "Lcl Rotation", "Lcl Rotation", "", "A",0,0,0
 			P: "RotationOrder", "enum", "", "",0
@@ -506,7 +506,7 @@ Objects:  {
 		Shading: Y
 		Culling: "CullingOff"
 	}
-	Model: 79744832, "Model::ConPt_Tooth", "Null" {
+	Model: 76255974, "Model::ConPt_Tooth", "Null" {
 		Version: 232
 		Properties70:  {
 			P: "RotationActive", "bool", "", "",1
@@ -520,7 +520,7 @@ Objects:  {
 		Shading: Y
 		Culling: "CullingOff"
 	}
-	Model: 76860558, "Model::ConPt_Tooth2", "Null" {
+	Model: 77031613, "Model::ConPt_Tooth2", "Null" {
 		Version: 232
 		Properties70:  {
 			P: "RotationActive", "bool", "", "",1
@@ -534,7 +534,7 @@ Objects:  {
 		Shading: Y
 		Culling: "CullingOff"
 	}
-	Model: 78950758, "Model::ConPt_Tail", "Null" {
+	Model: 72847592, "Model::ConPt_Tail", "Null" {
 		Version: 232
 		Properties70:  {
 			P: "RotationActive", "bool", "", "",1
@@ -548,7 +548,7 @@ Objects:  {
 		Shading: Y
 		Culling: "CullingOff"
 	}
-	Model: 74280089, "Model::Arm2", "Null" {
+	Model: 74851764, "Model::Arm2", "Null" {
 		Version: 232
 		Properties70:  {
 			P: "RotationActive", "bool", "", "",1
@@ -562,7 +562,7 @@ Objects:  {
 		Shading: Y
 		Culling: "CullingOff"
 	}
-	Model: 74398370, "Model::LowArm2", "Null" {
+	Model: 71438579, "Model::LowArm2", "Null" {
 		Version: 232
 		Properties70:  {
 			P: "RotationActive", "bool", "", "",1
@@ -576,7 +576,7 @@ Objects:  {
 		Shading: Y
 		Culling: "CullingOff"
 	}
-	Model: 74496703, "Model::Leg2", "Null" {
+	Model: 76422691, "Model::Leg2", "Null" {
 		Version: 232
 		Properties70:  {
 			P: "RotationActive", "bool", "", "",1
@@ -590,7 +590,7 @@ Objects:  {
 		Shading: Y
 		Culling: "CullingOff"
 	}
-	Model: 77110918, "Model::LowLeg2", "Null" {
+	Model: 77693116, "Model::LowLeg2", "Null" {
 		Version: 232
 		Properties70:  {
 			P: "RotationActive", "bool", "", "",1
@@ -604,7 +604,7 @@ Objects:  {
 		Shading: Y
 		Culling: "CullingOff"
 	}
-	Model: 78811932, "Model::beveled_cuboid", "Mesh" {
+	Model: 78064696, "Model::beveled_cuboid", "Mesh" {
 		Version: 232
 		Properties70:  {
 			P: "RotationActive", "bool", "", "",1
@@ -619,7 +619,7 @@ Objects:  {
 		Shading: Y
 		Culling: "CullingOff"
 	}
-	Geometry: 77474566, "Geometry::beveled_cuboid", "Mesh" {
+	Geometry: 79222811, "Geometry::beveled_cuboid", "Mesh" {
 		Vertices: *60 {
 			a: -31.25,75,31.25,-31.25,75,-31.25,-37.5,15.625,31.25,-37.5,68.75,31.25,-37.5,15.625,-31.25,-37.5,68.75,-31.25,-31.25,15.625,-37.5,-31.25,68.75,-37.5,-31.25,15.625,37.5,-31.25,68.75,37.5,31.25,75,31.25,31.25,75,-31.25,37.5,15.625,31.25,37.5,68.75,31.25,37.5,15.625,-31.25,37.5,68.75,-31.25,31.25,15.625,-37.5,31.25,68.75,-37.5,31.25,15.625,37.5,31.25,68.75,37.5
 		}
@@ -670,7 +670,7 @@ Objects:  {
 			}
 		}
 	}
-	Model: 76564280, "Model::beveled_cuboid_1", "Mesh" {
+	Model: 75879477, "Model::beveled_cuboid_1", "Mesh" {
 		Version: 232
 		Properties70:  {
 			P: "RotationActive", "bool", "", "",1
@@ -685,7 +685,7 @@ Objects:  {
 		Shading: Y
 		Culling: "CullingOff"
 	}
-	Geometry: 75289859, "Geometry::beveled_cuboid_1", "Mesh" {
+	Geometry: 76745682, "Geometry::beveled_cuboid_1", "Mesh" {
 		Vertices: *60 {
 			a: -31.25,56.25,31.25,-31.25,56.25,-31.25,-37.5,62.5,31.25,-37.5,68.75,31.25,-37.5,62.5,-31.25,-37.5,68.75,-31.25,-31.25,62.5,-37.5,-31.25,68.75,-37.5,-31.25,62.5,37.5,-31.25,68.75,37.5,31.25,56.25,31.25,31.25,56.25,-31.25,37.5,62.5,31.25,37.5,68.75,31.25,37.5,62.5,-31.25,37.5,68.75,-31.25,31.25,62.5,-37.5,31.25,68.75,-37.5,31.25,62.5,37.5,31.25,68.75,37.5
 		}
@@ -736,7 +736,7 @@ Objects:  {
 			}
 		}
 	}
-	Model: 70407875, "Model::beveled_cuboid_2", "Mesh" {
+	Model: 74630248, "Model::beveled_cuboid_2", "Mesh" {
 		Version: 232
 		Properties70:  {
 			P: "RotationActive", "bool", "", "",1
@@ -751,7 +751,7 @@ Objects:  {
 		Shading: Y
 		Culling: "CullingOff"
 	}
-	Geometry: 77798901, "Geometry::beveled_cuboid_2", "Mesh" {
+	Geometry: 73120876, "Geometry::beveled_cuboid_2", "Mesh" {
 		Vertices: *72 {
 			a: -26.0416875,75,11.1979375,-26.0416875,75,-33.0729375,-26.0416875,6.25,11.1979375,-26.0416875,6.25,-33.0729375,-31.25,11.9791875,11.1979375,-31.25,69.2708125,11.1979375,-31.25,11.9791875,-33.0729375,-31.25,69.2708125,-33.0729375,-26.0416875,11.9791875,-37.5,-26.0416875,69.2708125,-37.5,-26.0416875,11.9791875,15.625,-26.0416875,69.2708125,15.625,26.0416875,75,11.1979375,26.0416875,75,-33.0729375,26.0416875,6.25,11.1979375,26.0416875,6.25,-33.0729375,31.25,11.9791875,11.1979375,31.25,69.2708125,11.1979375,31.25,11.9791875,-33.0729375,31.25,69.2708125,-33.0729375,26.0416875,11.9791875,-37.5,26.0416875,69.2708125,-37.5,26.0416875,11.9791875,15.625,26.0416875,69.2708125,15.625
 		}
@@ -802,7 +802,7 @@ Objects:  {
 			}
 		}
 	}
-	Model: 79535664, "Model::beveled_cuboid_3", "Mesh" {
+	Model: 72119807, "Model::beveled_cuboid_3", "Mesh" {
 		Version: 232
 		Properties70:  {
 			P: "RotationActive", "bool", "", "",1
@@ -817,7 +817,7 @@ Objects:  {
 		Shading: Y
 		Culling: "CullingOff"
 	}
-	Geometry: 71397227, "Geometry::beveled_cuboid_3", "Mesh" {
+	Geometry: 76518776, "Geometry::beveled_cuboid_3", "Mesh" {
 		Vertices: *72 {
 			a: -23.4375,71.875,19.791625,-23.4375,71.875,-32.291625,-23.4375,9.375,19.791625,-23.4375,9.375,-32.291625,-28.125,14.5833125,19.791625,-28.125,66.6666875,19.791625,-28.125,14.5833125,-32.291625,-28.125,66.6666875,-32.291625,-23.4375,14.5833125,-37.5,-23.4375,66.6666875,-37.5,-23.4375,14.5833125,25,-23.4375,66.6666875,25,23.4375,71.875,19.791625,23.4375,71.875,-32.291625,23.4375,9.375,19.791625,23.4375,9.375,-32.291625,28.125,14.5833125,19.791625,28.125,66.6666875,19.791625,28.125,14.5833125,-32.291625,28.125,66.6666875,-32.291625,23.4375,14.5833125,-37.5,23.4375,66.6666875,-37.5,23.4375,14.5833125,25,23.4375,66.6666875,25
 		}
@@ -868,7 +868,7 @@ Objects:  {
 			}
 		}
 	}
-	Model: 71218876, "Model::beveled_cuboid_4", "Mesh" {
+	Model: 70347296, "Model::beveled_cuboid_4", "Mesh" {
 		Version: 232
 		Properties70:  {
 			P: "RotationActive", "bool", "", "",1
@@ -883,7 +883,7 @@ Objects:  {
 		Shading: Y
 		Culling: "CullingOff"
 	}
-	Geometry: 73254356, "Geometry::beveled_cuboid_4", "Mesh" {
+	Geometry: 78510276, "Geometry::beveled_cuboid_4", "Mesh" {
 		Vertices: *72 {
 			a: -26.0416875,75,10.9375,-26.0416875,75,-35.9375,-26.0416875,6.25,10.9375,-26.0416875,6.25,-35.9375,-31.25,11.9791875,10.9375,-31.25,69.2708125,10.9375,-31.25,11.9791875,-35.9375,-31.25,69.2708125,-35.9375,-26.0416875,11.9791875,-40.625,-26.0416875,69.2708125,-40.625,-26.0416875,11.9791875,15.625,-26.0416875,69.2708125,15.625,26.0416875,75,10.9375,26.0416875,75,-35.9375,26.0416875,6.25,10.9375,26.0416875,6.25,-35.9375,31.25,11.9791875,10.9375,31.25,69.2708125,10.9375,31.25,11.9791875,-35.9375,31.25,69.2708125,-35.9375,26.0416875,11.9791875,-40.625,26.0416875,69.2708125,-40.625,26.0416875,11.9791875,15.625,26.0416875,69.2708125,15.625
 		}
@@ -934,7 +934,7 @@ Objects:  {
 			}
 		}
 	}
-	Model: 78202980, "Model::beveled_cuboid_5", "Mesh" {
+	Model: 75550081, "Model::beveled_cuboid_5", "Mesh" {
 		Version: 232
 		Properties70:  {
 			P: "RotationActive", "bool", "", "",1
@@ -949,7 +949,7 @@ Objects:  {
 		Shading: Y
 		Culling: "CullingOff"
 	}
-	Geometry: 75498248, "Geometry::beveled_cuboid_5", "Mesh" {
+	Geometry: 70122689, "Geometry::beveled_cuboid_5", "Mesh" {
 		Vertices: *72 {
 			a: 7.03125,50,9.375,7.03125,50,-9.375,-7.03125,50,9.375,-7.03125,50,-9.375,7.03125,0,9.375,7.03125,0,-9.375,-7.03125,0,9.375,-7.03125,0,-9.375,-9.375,6.25,9.375,-9.375,43.75,9.375,-9.375,6.25,-9.375,-9.375,43.75,-9.375,9.375,6.25,9.375,9.375,43.75,9.375,9.375,6.25,-9.375,9.375,43.75,-9.375,7.03125,6.25,-12.5,7.03125,43.75,-12.5,-7.03125,6.25,-12.5,-7.03125,43.75,-12.5,7.03125,6.25,12.5,7.03125,43.75,12.5,-7.03125,6.25,12.5,-7.03125,43.75,12.5
 		}
@@ -1000,7 +1000,7 @@ Objects:  {
 			}
 		}
 	}
-	Model: 75523163, "Model::beveled_cuboid_6", "Mesh" {
+	Model: 77327348, "Model::beveled_cuboid_6", "Mesh" {
 		Version: 232
 		Properties70:  {
 			P: "RotationActive", "bool", "", "",1
@@ -1015,7 +1015,7 @@ Objects:  {
 		Shading: Y
 		Culling: "CullingOff"
 	}
-	Geometry: 73067936, "Geometry::beveled_cuboid_6", "Mesh" {
+	Geometry: 78066027, "Geometry::beveled_cuboid_6", "Mesh" {
 		Vertices: *72 {
 			a: 7.03125,50,9.375,7.03125,50,-9.375,-7.03125,50,9.375,-7.03125,50,-9.375,7.03125,3.125,9.375,7.03125,3.125,-9.375,-7.03125,3.125,9.375,-7.03125,3.125,-9.375,-9.375,8.984375,9.375,-9.375,44.140625,9.375,-9.375,8.984375,-9.375,-9.375,44.140625,-9.375,9.375,8.984375,9.375,9.375,44.140625,9.375,9.375,8.984375,-9.375,9.375,44.140625,-9.375,7.03125,8.984375,-12.5,7.03125,44.140625,-12.5,-7.03125,8.984375,-12.5,-7.03125,44.140625,-12.5,7.03125,8.984375,12.5,7.03125,44.140625,12.5,-7.03125,8.984375,12.5,-7.03125,44.140625,12.5
 		}
@@ -1066,7 +1066,7 @@ Objects:  {
 			}
 		}
 	}
-	Model: 73722100, "Model::beveled_cuboid_7", "Mesh" {
+	Model: 75551332, "Model::beveled_cuboid_7", "Mesh" {
 		Version: 232
 		Properties70:  {
 			P: "RotationActive", "bool", "", "",1
@@ -1081,7 +1081,7 @@ Objects:  {
 		Shading: Y
 		Culling: "CullingOff"
 	}
-	Geometry: 74449133, "Geometry::beveled_cuboid_7", "Mesh" {
+	Geometry: 77415747, "Geometry::beveled_cuboid_7", "Mesh" {
 		Vertices: *72 {
 			a: 7.03125,53.125,14.0625,7.03125,53.125,-14.0625,-7.03125,53.125,14.0625,-7.03125,53.125,-14.0625,7.03125,-3.125,14.0625,7.03125,-3.125,-14.0625,-7.03125,-3.125,14.0625,-7.03125,-3.125,-14.0625,-9.375,3.90625,14.0625,-9.375,46.09375,14.0625,-9.375,3.90625,-14.0625,-9.375,46.09375,-14.0625,9.375,3.90625,14.0625,9.375,46.09375,14.0625,9.375,3.90625,-14.0625,9.375,46.09375,-14.0625,7.03125,3.90625,-18.75,7.03125,46.09375,-18.75,-7.03125,3.90625,-18.75,-7.03125,46.09375,-18.75,7.03125,3.90625,18.75,7.03125,46.09375,18.75,-7.03125,3.90625,18.75,-7.03125,46.09375,18.75
 		}
@@ -1132,7 +1132,7 @@ Objects:  {
 			}
 		}
 	}
-	Model: 73759645, "Model::beveled_cuboid_8", "Mesh" {
+	Model: 79808631, "Model::beveled_cuboid_8", "Mesh" {
 		Version: 232
 		Properties70:  {
 			P: "RotationActive", "bool", "", "",1
@@ -1147,7 +1147,7 @@ Objects:  {
 		Shading: Y
 		Culling: "CullingOff"
 	}
-	Geometry: 77209040, "Geometry::beveled_cuboid_8", "Mesh" {
+	Geometry: 74781517, "Geometry::beveled_cuboid_8", "Mesh" {
 		Vertices: *72 {
 			a: 7.03125,53.125,9.375,7.03125,53.125,-9.375,-7.03125,53.125,9.375,-7.03125,53.125,-9.375,7.03125,-3.125,9.375,7.03125,-3.125,-9.375,-7.03125,-3.125,9.375,-7.03125,-3.125,-9.375,-9.375,3.90625,9.375,-9.375,46.09375,9.375,-9.375,3.90625,-9.375,-9.375,46.09375,-9.375,9.375,3.90625,9.375,9.375,46.09375,9.375,9.375,3.90625,-9.375,9.375,46.09375,-9.375,7.03125,3.90625,-12.5,7.03125,46.09375,-12.5,-7.03125,3.90625,-12.5,-7.03125,46.09375,-12.5,7.03125,3.90625,12.5,7.03125,46.09375,12.5,-7.03125,3.90625,12.5,-7.03125,46.09375,12.5
 		}
@@ -1198,7 +1198,7 @@ Objects:  {
 			}
 		}
 	}
-	Model: 76515960, "Model::beveled_cuboid_9", "Mesh" {
+	Model: 75617639, "Model::beveled_cuboid_9", "Mesh" {
 		Version: 232
 		Properties70:  {
 			P: "RotationActive", "bool", "", "",1
@@ -1213,7 +1213,7 @@ Objects:  {
 		Shading: Y
 		Culling: "CullingOff"
 	}
-	Geometry: 72589676, "Geometry::beveled_cuboid_9", "Mesh" {
+	Geometry: 74372446, "Geometry::beveled_cuboid_9", "Mesh" {
 		Vertices: *72 {
 			a: -7.03125,50,9.375,-7.03125,50,-9.375,7.03125,50,9.375,7.03125,50,-9.375,-7.03125,0,9.375,-7.03125,0,-9.375,7.03125,0,9.375,7.03125,0,-9.375,9.375,6.25,9.375,9.375,43.75,9.375,9.375,6.25,-9.375,9.375,43.75,-9.375,-9.375,6.25,9.375,-9.375,43.75,9.375,-9.375,6.25,-9.375,-9.375,43.75,-9.375,-7.03125,6.25,-12.5,-7.03125,43.75,-12.5,7.03125,6.25,-12.5,7.03125,43.75,-12.5,-7.03125,6.25,12.5,-7.03125,43.75,12.5,7.03125,6.25,12.5,7.03125,43.75,12.5
 		}
@@ -1264,7 +1264,7 @@ Objects:  {
 			}
 		}
 	}
-	Model: 78497194, "Model::beveled_cuboid_10", "Mesh" {
+	Model: 75098202, "Model::beveled_cuboid_10", "Mesh" {
 		Version: 232
 		Properties70:  {
 			P: "RotationActive", "bool", "", "",1
@@ -1279,7 +1279,7 @@ Objects:  {
 		Shading: Y
 		Culling: "CullingOff"
 	}
-	Geometry: 76527341, "Geometry::beveled_cuboid_10", "Mesh" {
+	Geometry: 79063661, "Geometry::beveled_cuboid_10", "Mesh" {
 		Vertices: *72 {
 			a: -7.03125,50,9.375,-7.03125,50,-9.375,7.03125,50,9.375,7.03125,50,-9.375,-7.03125,3.125,9.375,-7.03125,3.125,-9.375,7.03125,3.125,9.375,7.03125,3.125,-9.375,9.375,8.984375,9.375,9.375,44.140625,9.375,9.375,8.984375,-9.375,9.375,44.140625,-9.375,-9.375,8.984375,9.375,-9.375,44.140625,9.375,-9.375,8.984375,-9.375,-9.375,44.140625,-9.375,-7.03125,8.984375,-12.5,-7.03125,44.140625,-12.5,7.03125,8.984375,-12.5,7.03125,44.140625,-12.5,-7.03125,8.984375,12.5,-7.03125,44.140625,12.5,7.03125,8.984375,12.5,7.03125,44.140625,12.5
 		}
@@ -1330,7 +1330,7 @@ Objects:  {
 			}
 		}
 	}
-	Model: 73822532, "Model::beveled_cuboid_11", "Mesh" {
+	Model: 74447276, "Model::beveled_cuboid_11", "Mesh" {
 		Version: 232
 		Properties70:  {
 			P: "RotationActive", "bool", "", "",1
@@ -1345,7 +1345,7 @@ Objects:  {
 		Shading: Y
 		Culling: "CullingOff"
 	}
-	Geometry: 72162505, "Geometry::beveled_cuboid_11", "Mesh" {
+	Geometry: 78113364, "Geometry::beveled_cuboid_11", "Mesh" {
 		Vertices: *72 {
 			a: -7.03125,53.125,14.0625,-7.03125,53.125,-14.0625,7.03125,53.125,14.0625,7.03125,53.125,-14.0625,-7.03125,-3.125,14.0625,-7.03125,-3.125,-14.0625,7.03125,-3.125,14.0625,7.03125,-3.125,-14.0625,9.375,3.90625,14.0625,9.375,46.09375,14.0625,9.375,3.90625,-14.0625,9.375,46.09375,-14.0625,-9.375,3.90625,14.0625,-9.375,46.09375,14.0625,-9.375,3.90625,-14.0625,-9.375,46.09375,-14.0625,-7.03125,3.90625,-18.75,-7.03125,46.09375,-18.75,7.03125,3.90625,-18.75,7.03125,46.09375,-18.75,-7.03125,3.90625,18.75,-7.03125,46.09375,18.75,7.03125,3.90625,18.75,7.03125,46.09375,18.75
 		}
@@ -1396,7 +1396,7 @@ Objects:  {
 			}
 		}
 	}
-	Model: 79235688, "Model::beveled_cuboid_12", "Mesh" {
+	Model: 73178184, "Model::beveled_cuboid_12", "Mesh" {
 		Version: 232
 		Properties70:  {
 			P: "RotationActive", "bool", "", "",1
@@ -1411,7 +1411,7 @@ Objects:  {
 		Shading: Y
 		Culling: "CullingOff"
 	}
-	Geometry: 74478705, "Geometry::beveled_cuboid_12", "Mesh" {
+	Geometry: 74495029, "Geometry::beveled_cuboid_12", "Mesh" {
 		Vertices: *72 {
 			a: -7.03125,53.125,9.375,-7.03125,53.125,-9.375,7.03125,53.125,9.375,7.03125,53.125,-9.375,-7.03125,-3.125,9.375,-7.03125,-3.125,-9.375,7.03125,-3.125,9.375,7.03125,-3.125,-9.375,9.375,3.90625,9.375,9.375,46.09375,9.375,9.375,3.90625,-9.375,9.375,46.09375,-9.375,-9.375,3.90625,9.375,-9.375,46.09375,9.375,-9.375,3.90625,-9.375,-9.375,46.09375,-9.375,-7.03125,3.90625,-12.5,-7.03125,46.09375,-12.5,7.03125,3.90625,-12.5,7.03125,46.09375,-12.5,-7.03125,3.90625,12.5,-7.03125,46.09375,12.5,7.03125,3.90625,12.5,7.03125,46.09375,12.5
 		}
@@ -1462,7 +1462,7 @@ Objects:  {
 			}
 		}
 	}
-	Material: 71054514, "Material::Tex_FB_Body_Tortoise_Speckled.png", "" {
+	Material: 76576705, "Material::Tex_FB_Body_Tortoise_Speckled.png", "" {
 		Version: 102
 		ShadingModel: "lambert"
 		MultiLayer: 0
@@ -1473,28 +1473,28 @@ Objects:  {
 			P: "Opacity", "double", "Number", "",1
 		}
 	}
-	Texture: 79213221, "Texture::Tex_FB_Body_Tortoise_Speckled.png", "" {
+	Texture: 79240949, "Texture::Tex_FB_Body_Tortoise_Speckled.png", "" {
 		Type: "TextureVideoClip"
 		Version: 202
 		TextureName: "Texture::Tex_FB_Body_Tortoise_Speckled.png"
 		Media: "Video::Tex_FB_Body_Tortoise_Speckled.png"
-		FileName: "C:\Users\crgre\OneDrive\Desktop\GameDevelopment\PersonalProjects\GeneticCATastropheII\External\Model\Furball\BeveledModel\Tex_FB_Body_Tortoise_Speckled.png"
+		FileName: "C:\Users\crgre\OneDrive\Desktop\GameDevelopment\PersonalProjects\GeneticCATastropheII\External\Model\Furball\Body\Tex_FB_Body_Tortoise_Speckled.png"
 		RelativeFilename: "Tex_FB_Body_Tortoise_Speckled.png"
 		ModelUVTranslation: 0,0
 		ModelUVScaling: 1,1
 		Texture_Alpha_Source: "None"
 		Cropping: 0,0,0,0
 	}
-	Video: 73250519, "Video::Tex_FB_Body_Tortoise_Speckled.png", "Clip" {
+	Video: 77578535, "Video::Tex_FB_Body_Tortoise_Speckled.png", "Clip" {
 		Type: "Clip"
 		Properties70:  {
-			P: "Path", "KString", "XRefUrl", "", "C:\Users\crgre\OneDrive\Desktop\GameDevelopment\PersonalProjects\GeneticCATastropheII\External\Model\Furball\BeveledModel\Tex_FB_Body_Tortoise_Speckled.png"
+			P: "Path", "KString", "XRefUrl", "", "C:\Users\crgre\OneDrive\Desktop\GameDevelopment\PersonalProjects\GeneticCATastropheII\External\Model\Furball\Body\Tex_FB_Body_Tortoise_Speckled.png"
 		}
 		UseMipMap: 0
-		Filename: "C:\Users\crgre\OneDrive\Desktop\GameDevelopment\PersonalProjects\GeneticCATastropheII\External\Model\Furball\BeveledModel\Tex_FB_Body_Tortoise_Speckled.png"
+		Filename: "C:\Users\crgre\OneDrive\Desktop\GameDevelopment\PersonalProjects\GeneticCATastropheII\External\Model\Furball\Body\Tex_FB_Body_Tortoise_Speckled.png"
 		RelativeFilename: "Tex_FB_Body_Tortoise_Speckled.png"
 	}
-	Material: 71191513, "Material::Tex_FB_Body_Tortoise_Split.png", "" {
+	Material: 78183734, "Material::Tex_FB_Body_Tortoise_Split.png", "" {
 		Version: 102
 		ShadingModel: "lambert"
 		MultiLayer: 0
@@ -1505,28 +1505,28 @@ Objects:  {
 			P: "Opacity", "double", "Number", "",1
 		}
 	}
-	Texture: 76725156, "Texture::Tex_FB_Body_Tortoise_Split.png", "" {
+	Texture: 74943191, "Texture::Tex_FB_Body_Tortoise_Split.png", "" {
 		Type: "TextureVideoClip"
 		Version: 202
 		TextureName: "Texture::Tex_FB_Body_Tortoise_Split.png"
 		Media: "Video::Tex_FB_Body_Tortoise_Split.png"
-		FileName: "C:\Users\crgre\OneDrive\Desktop\GameDevelopment\PersonalProjects\GeneticCATastropheII\External\Model\Furball\BeveledModel\Tex_FB_Body_Tortoise_Split.png"
+		FileName: "C:\Users\crgre\OneDrive\Desktop\GameDevelopment\PersonalProjects\GeneticCATastropheII\External\Model\Furball\Body\Tex_FB_Body_Tortoise_Split.png"
 		RelativeFilename: "Tex_FB_Body_Tortoise_Split.png"
 		ModelUVTranslation: 0,0
 		ModelUVScaling: 1,1
 		Texture_Alpha_Source: "None"
 		Cropping: 0,0,0,0
 	}
-	Video: 70076983, "Video::Tex_FB_Body_Tortoise_Split.png", "Clip" {
+	Video: 79714636, "Video::Tex_FB_Body_Tortoise_Split.png", "Clip" {
 		Type: "Clip"
 		Properties70:  {
-			P: "Path", "KString", "XRefUrl", "", "C:\Users\crgre\OneDrive\Desktop\GameDevelopment\PersonalProjects\GeneticCATastropheII\External\Model\Furball\BeveledModel\Tex_FB_Body_Tortoise_Split.png"
+			P: "Path", "KString", "XRefUrl", "", "C:\Users\crgre\OneDrive\Desktop\GameDevelopment\PersonalProjects\GeneticCATastropheII\External\Model\Furball\Body\Tex_FB_Body_Tortoise_Split.png"
 		}
 		UseMipMap: 0
-		Filename: "C:\Users\crgre\OneDrive\Desktop\GameDevelopment\PersonalProjects\GeneticCATastropheII\External\Model\Furball\BeveledModel\Tex_FB_Body_Tortoise_Split.png"
+		Filename: "C:\Users\crgre\OneDrive\Desktop\GameDevelopment\PersonalProjects\GeneticCATastropheII\External\Model\Furball\Body\Tex_FB_Body_Tortoise_Split.png"
 		RelativeFilename: "Tex_FB_Body_Tortoise_Split.png"
 	}
-	Material: 74564526, "Material::Tex_FB_Body_Piebald_0.png", "" {
+	Material: 77348484, "Material::Tex_FB_Body_Piebald_0.png", "" {
 		Version: 102
 		ShadingModel: "lambert"
 		MultiLayer: 0
@@ -1537,28 +1537,28 @@ Objects:  {
 			P: "Opacity", "double", "Number", "",1
 		}
 	}
-	Texture: 73629575, "Texture::Tex_FB_Body_Piebald_0.png", "" {
+	Texture: 74735893, "Texture::Tex_FB_Body_Piebald_0.png", "" {
 		Type: "TextureVideoClip"
 		Version: 202
 		TextureName: "Texture::Tex_FB_Body_Piebald_0.png"
 		Media: "Video::Tex_FB_Body_Piebald_0.png"
-		FileName: "C:\Users\crgre\OneDrive\Desktop\GameDevelopment\PersonalProjects\GeneticCATastropheII\External\Model\Furball\BeveledModel\Tex_FB_Body_Piebald_0.png"
+		FileName: "C:\Users\crgre\OneDrive\Desktop\GameDevelopment\PersonalProjects\GeneticCATastropheII\External\Model\Furball\Body\Tex_FB_Body_Piebald_0.png"
 		RelativeFilename: "Tex_FB_Body_Piebald_0.png"
 		ModelUVTranslation: 0,0
 		ModelUVScaling: 1,1
 		Texture_Alpha_Source: "None"
 		Cropping: 0,0,0,0
 	}
-	Video: 72107646, "Video::Tex_FB_Body_Piebald_0.png", "Clip" {
+	Video: 79636174, "Video::Tex_FB_Body_Piebald_0.png", "Clip" {
 		Type: "Clip"
 		Properties70:  {
-			P: "Path", "KString", "XRefUrl", "", "C:\Users\crgre\OneDrive\Desktop\GameDevelopment\PersonalProjects\GeneticCATastropheII\External\Model\Furball\BeveledModel\Tex_FB_Body_Piebald_0.png"
+			P: "Path", "KString", "XRefUrl", "", "C:\Users\crgre\OneDrive\Desktop\GameDevelopment\PersonalProjects\GeneticCATastropheII\External\Model\Furball\Body\Tex_FB_Body_Piebald_0.png"
 		}
 		UseMipMap: 0
-		Filename: "C:\Users\crgre\OneDrive\Desktop\GameDevelopment\PersonalProjects\GeneticCATastropheII\External\Model\Furball\BeveledModel\Tex_FB_Body_Piebald_0.png"
+		Filename: "C:\Users\crgre\OneDrive\Desktop\GameDevelopment\PersonalProjects\GeneticCATastropheII\External\Model\Furball\Body\Tex_FB_Body_Piebald_0.png"
 		RelativeFilename: "Tex_FB_Body_Piebald_0.png"
 	}
-	Material: 79864835, "Material::Tex_FB_Body_Piebald_1.png", "" {
+	Material: 79713972, "Material::Tex_FB_Body_Piebald_1.png", "" {
 		Version: 102
 		ShadingModel: "lambert"
 		MultiLayer: 0
@@ -1569,28 +1569,28 @@ Objects:  {
 			P: "Opacity", "double", "Number", "",1
 		}
 	}
-	Texture: 79020339, "Texture::Tex_FB_Body_Piebald_1.png", "" {
+	Texture: 78197355, "Texture::Tex_FB_Body_Piebald_1.png", "" {
 		Type: "TextureVideoClip"
 		Version: 202
 		TextureName: "Texture::Tex_FB_Body_Piebald_1.png"
 		Media: "Video::Tex_FB_Body_Piebald_1.png"
-		FileName: "C:\Users\crgre\OneDrive\Desktop\GameDevelopment\PersonalProjects\GeneticCATastropheII\External\Model\Furball\BeveledModel\Tex_FB_Body_Piebald_1.png"
+		FileName: "C:\Users\crgre\OneDrive\Desktop\GameDevelopment\PersonalProjects\GeneticCATastropheII\External\Model\Furball\Body\Tex_FB_Body_Piebald_1.png"
 		RelativeFilename: "Tex_FB_Body_Piebald_1.png"
 		ModelUVTranslation: 0,0
 		ModelUVScaling: 1,1
 		Texture_Alpha_Source: "None"
 		Cropping: 0,0,0,0
 	}
-	Video: 72105039, "Video::Tex_FB_Body_Piebald_1.png", "Clip" {
+	Video: 79912680, "Video::Tex_FB_Body_Piebald_1.png", "Clip" {
 		Type: "Clip"
 		Properties70:  {
-			P: "Path", "KString", "XRefUrl", "", "C:\Users\crgre\OneDrive\Desktop\GameDevelopment\PersonalProjects\GeneticCATastropheII\External\Model\Furball\BeveledModel\Tex_FB_Body_Piebald_1.png"
+			P: "Path", "KString", "XRefUrl", "", "C:\Users\crgre\OneDrive\Desktop\GameDevelopment\PersonalProjects\GeneticCATastropheII\External\Model\Furball\Body\Tex_FB_Body_Piebald_1.png"
 		}
 		UseMipMap: 0
-		Filename: "C:\Users\crgre\OneDrive\Desktop\GameDevelopment\PersonalProjects\GeneticCATastropheII\External\Model\Furball\BeveledModel\Tex_FB_Body_Piebald_1.png"
+		Filename: "C:\Users\crgre\OneDrive\Desktop\GameDevelopment\PersonalProjects\GeneticCATastropheII\External\Model\Furball\Body\Tex_FB_Body_Piebald_1.png"
 		RelativeFilename: "Tex_FB_Body_Piebald_1.png"
 	}
-	Material: 76678238, "Material::Tex_FB_Body_Piebald_2.png", "" {
+	Material: 70458421, "Material::Tex_FB_Body_Piebald_2.png", "" {
 		Version: 102
 		ShadingModel: "lambert"
 		MultiLayer: 0
@@ -1601,28 +1601,28 @@ Objects:  {
 			P: "Opacity", "double", "Number", "",1
 		}
 	}
-	Texture: 72391641, "Texture::Tex_FB_Body_Piebald_2.png", "" {
+	Texture: 79034190, "Texture::Tex_FB_Body_Piebald_2.png", "" {
 		Type: "TextureVideoClip"
 		Version: 202
 		TextureName: "Texture::Tex_FB_Body_Piebald_2.png"
 		Media: "Video::Tex_FB_Body_Piebald_2.png"
-		FileName: "C:\Users\crgre\OneDrive\Desktop\GameDevelopment\PersonalProjects\GeneticCATastropheII\External\Model\Furball\BeveledModel\Tex_FB_Body_Piebald_2.png"
+		FileName: "C:\Users\crgre\OneDrive\Desktop\GameDevelopment\PersonalProjects\GeneticCATastropheII\External\Model\Furball\Body\Tex_FB_Body_Piebald_2.png"
 		RelativeFilename: "Tex_FB_Body_Piebald_2.png"
 		ModelUVTranslation: 0,0
 		ModelUVScaling: 1,1
 		Texture_Alpha_Source: "None"
 		Cropping: 0,0,0,0
 	}
-	Video: 71295677, "Video::Tex_FB_Body_Piebald_2.png", "Clip" {
+	Video: 77714483, "Video::Tex_FB_Body_Piebald_2.png", "Clip" {
 		Type: "Clip"
 		Properties70:  {
-			P: "Path", "KString", "XRefUrl", "", "C:\Users\crgre\OneDrive\Desktop\GameDevelopment\PersonalProjects\GeneticCATastropheII\External\Model\Furball\BeveledModel\Tex_FB_Body_Piebald_2.png"
+			P: "Path", "KString", "XRefUrl", "", "C:\Users\crgre\OneDrive\Desktop\GameDevelopment\PersonalProjects\GeneticCATastropheII\External\Model\Furball\Body\Tex_FB_Body_Piebald_2.png"
 		}
 		UseMipMap: 0
-		Filename: "C:\Users\crgre\OneDrive\Desktop\GameDevelopment\PersonalProjects\GeneticCATastropheII\External\Model\Furball\BeveledModel\Tex_FB_Body_Piebald_2.png"
+		Filename: "C:\Users\crgre\OneDrive\Desktop\GameDevelopment\PersonalProjects\GeneticCATastropheII\External\Model\Furball\Body\Tex_FB_Body_Piebald_2.png"
 		RelativeFilename: "Tex_FB_Body_Piebald_2.png"
 	}
-	Material: 70757280, "Material::Tex_FB_Body_Piebald_3.png", "" {
+	Material: 79162807, "Material::Tex_FB_Body_Piebald_3.png", "" {
 		Version: 102
 		ShadingModel: "lambert"
 		MultiLayer: 0
@@ -1633,28 +1633,28 @@ Objects:  {
 			P: "Opacity", "double", "Number", "",1
 		}
 	}
-	Texture: 76054314, "Texture::Tex_FB_Body_Piebald_3.png", "" {
+	Texture: 74595823, "Texture::Tex_FB_Body_Piebald_3.png", "" {
 		Type: "TextureVideoClip"
 		Version: 202
 		TextureName: "Texture::Tex_FB_Body_Piebald_3.png"
 		Media: "Video::Tex_FB_Body_Piebald_3.png"
-		FileName: "C:\Users\crgre\OneDrive\Desktop\GameDevelopment\PersonalProjects\GeneticCATastropheII\External\Model\Furball\BeveledModel\Tex_FB_Body_Piebald_3.png"
+		FileName: "C:\Users\crgre\OneDrive\Desktop\GameDevelopment\PersonalProjects\GeneticCATastropheII\External\Model\Furball\Body\Tex_FB_Body_Piebald_3.png"
 		RelativeFilename: "Tex_FB_Body_Piebald_3.png"
 		ModelUVTranslation: 0,0
 		ModelUVScaling: 1,1
 		Texture_Alpha_Source: "None"
 		Cropping: 0,0,0,0
 	}
-	Video: 78694729, "Video::Tex_FB_Body_Piebald_3.png", "Clip" {
+	Video: 78325951, "Video::Tex_FB_Body_Piebald_3.png", "Clip" {
 		Type: "Clip"
 		Properties70:  {
-			P: "Path", "KString", "XRefUrl", "", "C:\Users\crgre\OneDrive\Desktop\GameDevelopment\PersonalProjects\GeneticCATastropheII\External\Model\Furball\BeveledModel\Tex_FB_Body_Piebald_3.png"
+			P: "Path", "KString", "XRefUrl", "", "C:\Users\crgre\OneDrive\Desktop\GameDevelopment\PersonalProjects\GeneticCATastropheII\External\Model\Furball\Body\Tex_FB_Body_Piebald_3.png"
 		}
 		UseMipMap: 0
-		Filename: "C:\Users\crgre\OneDrive\Desktop\GameDevelopment\PersonalProjects\GeneticCATastropheII\External\Model\Furball\BeveledModel\Tex_FB_Body_Piebald_3.png"
+		Filename: "C:\Users\crgre\OneDrive\Desktop\GameDevelopment\PersonalProjects\GeneticCATastropheII\External\Model\Furball\Body\Tex_FB_Body_Piebald_3.png"
 		RelativeFilename: "Tex_FB_Body_Piebald_3.png"
 	}
-	Material: 77926981, "Material::Tex_FB_Body_Piebald_4.png", "" {
+	Material: 78366368, "Material::Tex_FB_Body_Piebald_4.png", "" {
 		Version: 102
 		ShadingModel: "lambert"
 		MultiLayer: 0
@@ -1665,28 +1665,28 @@ Objects:  {
 			P: "Opacity", "double", "Number", "",1
 		}
 	}
-	Texture: 79338969, "Texture::Tex_FB_Body_Piebald_4.png", "" {
+	Texture: 70866024, "Texture::Tex_FB_Body_Piebald_4.png", "" {
 		Type: "TextureVideoClip"
 		Version: 202
 		TextureName: "Texture::Tex_FB_Body_Piebald_4.png"
 		Media: "Video::Tex_FB_Body_Piebald_4.png"
-		FileName: "C:\Users\crgre\OneDrive\Desktop\GameDevelopment\PersonalProjects\GeneticCATastropheII\External\Model\Furball\BeveledModel\Tex_FB_Body_Piebald_4.png"
+		FileName: "C:\Users\crgre\OneDrive\Desktop\GameDevelopment\PersonalProjects\GeneticCATastropheII\External\Model\Furball\Body\Tex_FB_Body_Piebald_4.png"
 		RelativeFilename: "Tex_FB_Body_Piebald_4.png"
 		ModelUVTranslation: 0,0
 		ModelUVScaling: 1,1
 		Texture_Alpha_Source: "None"
 		Cropping: 0,0,0,0
 	}
-	Video: 79814275, "Video::Tex_FB_Body_Piebald_4.png", "Clip" {
+	Video: 79110703, "Video::Tex_FB_Body_Piebald_4.png", "Clip" {
 		Type: "Clip"
 		Properties70:  {
-			P: "Path", "KString", "XRefUrl", "", "C:\Users\crgre\OneDrive\Desktop\GameDevelopment\PersonalProjects\GeneticCATastropheII\External\Model\Furball\BeveledModel\Tex_FB_Body_Piebald_4.png"
+			P: "Path", "KString", "XRefUrl", "", "C:\Users\crgre\OneDrive\Desktop\GameDevelopment\PersonalProjects\GeneticCATastropheII\External\Model\Furball\Body\Tex_FB_Body_Piebald_4.png"
 		}
 		UseMipMap: 0
-		Filename: "C:\Users\crgre\OneDrive\Desktop\GameDevelopment\PersonalProjects\GeneticCATastropheII\External\Model\Furball\BeveledModel\Tex_FB_Body_Piebald_4.png"
+		Filename: "C:\Users\crgre\OneDrive\Desktop\GameDevelopment\PersonalProjects\GeneticCATastropheII\External\Model\Furball\Body\Tex_FB_Body_Piebald_4.png"
 		RelativeFilename: "Tex_FB_Body_Piebald_4.png"
 	}
-	Material: 72006345, "Material::Tex_FB_Body_Piebald_5.png", "" {
+	Material: 74070280, "Material::Tex_FB_Body_Piebald_5.png", "" {
 		Version: 102
 		ShadingModel: "lambert"
 		MultiLayer: 0
@@ -1697,28 +1697,28 @@ Objects:  {
 			P: "Opacity", "double", "Number", "",1
 		}
 	}
-	Texture: 79680988, "Texture::Tex_FB_Body_Piebald_5.png", "" {
+	Texture: 73417708, "Texture::Tex_FB_Body_Piebald_5.png", "" {
 		Type: "TextureVideoClip"
 		Version: 202
 		TextureName: "Texture::Tex_FB_Body_Piebald_5.png"
 		Media: "Video::Tex_FB_Body_Piebald_5.png"
-		FileName: "C:\Users\crgre\OneDrive\Desktop\GameDevelopment\PersonalProjects\GeneticCATastropheII\External\Model\Furball\BeveledModel\Tex_FB_Body_Piebald_5.png"
+		FileName: "C:\Users\crgre\OneDrive\Desktop\GameDevelopment\PersonalProjects\GeneticCATastropheII\External\Model\Furball\Body\Tex_FB_Body_Piebald_5.png"
 		RelativeFilename: "Tex_FB_Body_Piebald_5.png"
 		ModelUVTranslation: 0,0
 		ModelUVScaling: 1,1
 		Texture_Alpha_Source: "None"
 		Cropping: 0,0,0,0
 	}
-	Video: 77391754, "Video::Tex_FB_Body_Piebald_5.png", "Clip" {
+	Video: 78786195, "Video::Tex_FB_Body_Piebald_5.png", "Clip" {
 		Type: "Clip"
 		Properties70:  {
-			P: "Path", "KString", "XRefUrl", "", "C:\Users\crgre\OneDrive\Desktop\GameDevelopment\PersonalProjects\GeneticCATastropheII\External\Model\Furball\BeveledModel\Tex_FB_Body_Piebald_5.png"
+			P: "Path", "KString", "XRefUrl", "", "C:\Users\crgre\OneDrive\Desktop\GameDevelopment\PersonalProjects\GeneticCATastropheII\External\Model\Furball\Body\Tex_FB_Body_Piebald_5.png"
 		}
 		UseMipMap: 0
-		Filename: "C:\Users\crgre\OneDrive\Desktop\GameDevelopment\PersonalProjects\GeneticCATastropheII\External\Model\Furball\BeveledModel\Tex_FB_Body_Piebald_5.png"
+		Filename: "C:\Users\crgre\OneDrive\Desktop\GameDevelopment\PersonalProjects\GeneticCATastropheII\External\Model\Furball\Body\Tex_FB_Body_Piebald_5.png"
 		RelativeFilename: "Tex_FB_Body_Piebald_5.png"
 	}
-	Material: 78636618, "Material::Tex_FB_Body_Piebald_6.png", "" {
+	Material: 79645106, "Material::Tex_FB_Body_Piebald_6.png", "" {
 		Version: 102
 		ShadingModel: "lambert"
 		MultiLayer: 0
@@ -1729,28 +1729,28 @@ Objects:  {
 			P: "Opacity", "double", "Number", "",1
 		}
 	}
-	Texture: 77483697, "Texture::Tex_FB_Body_Piebald_6.png", "" {
+	Texture: 79411732, "Texture::Tex_FB_Body_Piebald_6.png", "" {
 		Type: "TextureVideoClip"
 		Version: 202
 		TextureName: "Texture::Tex_FB_Body_Piebald_6.png"
 		Media: "Video::Tex_FB_Body_Piebald_6.png"
-		FileName: "C:\Users\crgre\OneDrive\Desktop\GameDevelopment\PersonalProjects\GeneticCATastropheII\External\Model\Furball\BeveledModel\Tex_FB_Body_Piebald_6.png"
+		FileName: "C:\Users\crgre\OneDrive\Desktop\GameDevelopment\PersonalProjects\GeneticCATastropheII\External\Model\Furball\Body\Tex_FB_Body_Piebald_6.png"
 		RelativeFilename: "Tex_FB_Body_Piebald_6.png"
 		ModelUVTranslation: 0,0
 		ModelUVScaling: 1,1
 		Texture_Alpha_Source: "None"
 		Cropping: 0,0,0,0
 	}
-	Video: 75805574, "Video::Tex_FB_Body_Piebald_6.png", "Clip" {
+	Video: 79192654, "Video::Tex_FB_Body_Piebald_6.png", "Clip" {
 		Type: "Clip"
 		Properties70:  {
-			P: "Path", "KString", "XRefUrl", "", "C:\Users\crgre\OneDrive\Desktop\GameDevelopment\PersonalProjects\GeneticCATastropheII\External\Model\Furball\BeveledModel\Tex_FB_Body_Piebald_6.png"
+			P: "Path", "KString", "XRefUrl", "", "C:\Users\crgre\OneDrive\Desktop\GameDevelopment\PersonalProjects\GeneticCATastropheII\External\Model\Furball\Body\Tex_FB_Body_Piebald_6.png"
 		}
 		UseMipMap: 0
-		Filename: "C:\Users\crgre\OneDrive\Desktop\GameDevelopment\PersonalProjects\GeneticCATastropheII\External\Model\Furball\BeveledModel\Tex_FB_Body_Piebald_6.png"
+		Filename: "C:\Users\crgre\OneDrive\Desktop\GameDevelopment\PersonalProjects\GeneticCATastropheII\External\Model\Furball\Body\Tex_FB_Body_Piebald_6.png"
 		RelativeFilename: "Tex_FB_Body_Piebald_6.png"
 	}
-	Material: 77307802, "Material::Tex_FB_Body_Piebald_7.png", "" {
+	Material: 77067158, "Material::Tex_FB_Body_Piebald_7.png", "" {
 		Version: 102
 		ShadingModel: "lambert"
 		MultiLayer: 0
@@ -1761,28 +1761,28 @@ Objects:  {
 			P: "Opacity", "double", "Number", "",1
 		}
 	}
-	Texture: 78151467, "Texture::Tex_FB_Body_Piebald_7.png", "" {
+	Texture: 78701281, "Texture::Tex_FB_Body_Piebald_7.png", "" {
 		Type: "TextureVideoClip"
 		Version: 202
 		TextureName: "Texture::Tex_FB_Body_Piebald_7.png"
 		Media: "Video::Tex_FB_Body_Piebald_7.png"
-		FileName: "C:\Users\crgre\OneDrive\Desktop\GameDevelopment\PersonalProjects\GeneticCATastropheII\External\Model\Furball\BeveledModel\Tex_FB_Body_Piebald_7.png"
+		FileName: "C:\Users\crgre\OneDrive\Desktop\GameDevelopment\PersonalProjects\GeneticCATastropheII\External\Model\Furball\Body\Tex_FB_Body_Piebald_7.png"
 		RelativeFilename: "Tex_FB_Body_Piebald_7.png"
 		ModelUVTranslation: 0,0
 		ModelUVScaling: 1,1
 		Texture_Alpha_Source: "None"
 		Cropping: 0,0,0,0
 	}
-	Video: 75642336, "Video::Tex_FB_Body_Piebald_7.png", "Clip" {
+	Video: 78300684, "Video::Tex_FB_Body_Piebald_7.png", "Clip" {
 		Type: "Clip"
 		Properties70:  {
-			P: "Path", "KString", "XRefUrl", "", "C:\Users\crgre\OneDrive\Desktop\GameDevelopment\PersonalProjects\GeneticCATastropheII\External\Model\Furball\BeveledModel\Tex_FB_Body_Piebald_7.png"
+			P: "Path", "KString", "XRefUrl", "", "C:\Users\crgre\OneDrive\Desktop\GameDevelopment\PersonalProjects\GeneticCATastropheII\External\Model\Furball\Body\Tex_FB_Body_Piebald_7.png"
 		}
 		UseMipMap: 0
-		Filename: "C:\Users\crgre\OneDrive\Desktop\GameDevelopment\PersonalProjects\GeneticCATastropheII\External\Model\Furball\BeveledModel\Tex_FB_Body_Piebald_7.png"
+		Filename: "C:\Users\crgre\OneDrive\Desktop\GameDevelopment\PersonalProjects\GeneticCATastropheII\External\Model\Furball\Body\Tex_FB_Body_Piebald_7.png"
 		RelativeFilename: "Tex_FB_Body_Piebald_7.png"
 	}
-	Material: 71451030, "Material::Tex_FB_Body_Piebald_8.png", "" {
+	Material: 73718684, "Material::Tex_FB_Body_Piebald_8.png", "" {
 		Version: 102
 		ShadingModel: "lambert"
 		MultiLayer: 0
@@ -1793,28 +1793,28 @@ Objects:  {
 			P: "Opacity", "double", "Number", "",1
 		}
 	}
-	Texture: 77911540, "Texture::Tex_FB_Body_Piebald_8.png", "" {
+	Texture: 73007952, "Texture::Tex_FB_Body_Piebald_8.png", "" {
 		Type: "TextureVideoClip"
 		Version: 202
 		TextureName: "Texture::Tex_FB_Body_Piebald_8.png"
 		Media: "Video::Tex_FB_Body_Piebald_8.png"
-		FileName: "C:\Users\crgre\OneDrive\Desktop\GameDevelopment\PersonalProjects\GeneticCATastropheII\External\Model\Furball\BeveledModel\Tex_FB_Body_Piebald_8.png"
+		FileName: "C:\Users\crgre\OneDrive\Desktop\GameDevelopment\PersonalProjects\GeneticCATastropheII\External\Model\Furball\Body\Tex_FB_Body_Piebald_8.png"
 		RelativeFilename: "Tex_FB_Body_Piebald_8.png"
 		ModelUVTranslation: 0,0
 		ModelUVScaling: 1,1
 		Texture_Alpha_Source: "None"
 		Cropping: 0,0,0,0
 	}
-	Video: 79055621, "Video::Tex_FB_Body_Piebald_8.png", "Clip" {
+	Video: 73089086, "Video::Tex_FB_Body_Piebald_8.png", "Clip" {
 		Type: "Clip"
 		Properties70:  {
-			P: "Path", "KString", "XRefUrl", "", "C:\Users\crgre\OneDrive\Desktop\GameDevelopment\PersonalProjects\GeneticCATastropheII\External\Model\Furball\BeveledModel\Tex_FB_Body_Piebald_8.png"
+			P: "Path", "KString", "XRefUrl", "", "C:\Users\crgre\OneDrive\Desktop\GameDevelopment\PersonalProjects\GeneticCATastropheII\External\Model\Furball\Body\Tex_FB_Body_Piebald_8.png"
 		}
 		UseMipMap: 0
-		Filename: "C:\Users\crgre\OneDrive\Desktop\GameDevelopment\PersonalProjects\GeneticCATastropheII\External\Model\Furball\BeveledModel\Tex_FB_Body_Piebald_8.png"
+		Filename: "C:\Users\crgre\OneDrive\Desktop\GameDevelopment\PersonalProjects\GeneticCATastropheII\External\Model\Furball\Body\Tex_FB_Body_Piebald_8.png"
 		RelativeFilename: "Tex_FB_Body_Piebald_8.png"
 	}
-	Material: 78637862, "Material::Tex_FB_Body_Piebald_9.png", "" {
+	Material: 70122001, "Material::Tex_FB_Body_Piebald_9.png", "" {
 		Version: 102
 		ShadingModel: "lambert"
 		MultiLayer: 0
@@ -1825,25 +1825,25 @@ Objects:  {
 			P: "Opacity", "double", "Number", "",1
 		}
 	}
-	Texture: 78386821, "Texture::Tex_FB_Body_Piebald_9.png", "" {
+	Texture: 79865763, "Texture::Tex_FB_Body_Piebald_9.png", "" {
 		Type: "TextureVideoClip"
 		Version: 202
 		TextureName: "Texture::Tex_FB_Body_Piebald_9.png"
 		Media: "Video::Tex_FB_Body_Piebald_9.png"
-		FileName: "C:\Users\crgre\OneDrive\Desktop\GameDevelopment\PersonalProjects\GeneticCATastropheII\External\Model\Furball\BeveledModel\Tex_FB_Body_Piebald_9.png"
+		FileName: "C:\Users\crgre\OneDrive\Desktop\GameDevelopment\PersonalProjects\GeneticCATastropheII\External\Model\Furball\Body\Tex_FB_Body_Piebald_9.png"
 		RelativeFilename: "Tex_FB_Body_Piebald_9.png"
 		ModelUVTranslation: 0,0
 		ModelUVScaling: 1,1
 		Texture_Alpha_Source: "None"
 		Cropping: 0,0,0,0
 	}
-	Video: 76838286, "Video::Tex_FB_Body_Piebald_9.png", "Clip" {
+	Video: 72171713, "Video::Tex_FB_Body_Piebald_9.png", "Clip" {
 		Type: "Clip"
 		Properties70:  {
-			P: "Path", "KString", "XRefUrl", "", "C:\Users\crgre\OneDrive\Desktop\GameDevelopment\PersonalProjects\GeneticCATastropheII\External\Model\Furball\BeveledModel\Tex_FB_Body_Piebald_9.png"
+			P: "Path", "KString", "XRefUrl", "", "C:\Users\crgre\OneDrive\Desktop\GameDevelopment\PersonalProjects\GeneticCATastropheII\External\Model\Furball\Body\Tex_FB_Body_Piebald_9.png"
 		}
 		UseMipMap: 0
-		Filename: "C:\Users\crgre\OneDrive\Desktop\GameDevelopment\PersonalProjects\GeneticCATastropheII\External\Model\Furball\BeveledModel\Tex_FB_Body_Piebald_9.png"
+		Filename: "C:\Users\crgre\OneDrive\Desktop\GameDevelopment\PersonalProjects\GeneticCATastropheII\External\Model\Furball\Body\Tex_FB_Body_Piebald_9.png"
 		RelativeFilename: "Tex_FB_Body_Piebald_9.png"
 	}
 }
@@ -1854,265 +1854,265 @@ Objects:  {
 Connections:  {
 
 	;Model::Model, Model::RootNode
-	C: "OO",70646083,0
+	C: "OO",73536053,0
 
 	;Model::Arm, Model::BodyUpper
-	C: "OO",76884939,72981838
+	C: "OO",72550843,79618579
 
 	;Model::Body, Model::Model
-	C: "OO",72816339,70646083
+	C: "OO",73200834,73536053
 
 	;Model::Head, Model::BodyUpper
-	C: "OO",74102743,72981838
+	C: "OO",75517360,79618579
 
 	;Model::Leg, Model::BodyLower
-	C: "OO",71760187,72441384
+	C: "OO",77755391,70667083
 
 	;Model::LowArm, Model::Arm
-	C: "OO",71447323,76884939
+	C: "OO",73142500,72550843
 
 	;Model::LowLeg, Model::Leg
-	C: "OO",73893043,71760187
+	C: "OO",72238127,77755391
 
 	;Model::BodyUpper, Model::Body
-	C: "OO",72981838,72816339
+	C: "OO",79618579,73200834
 
 	;Model::BodyLower, Model::Body
-	C: "OO",72441384,72816339
+	C: "OO",70667083,73200834
 
 	;Model::Jaw, Model::Head
-	C: "OO",74685519,74102743
+	C: "OO",79043633,75517360
 
 	;Model::ConPt_Tongue, Model::Head
-	C: "OO",78795300,74102743
+	C: "OO",73628228,75517360
 
 	;Model::ConPt_Whisker, Model::Head
-	C: "OO",79989508,74102743
+	C: "OO",71163728,75517360
 
 	;Model::ConPt_Whisker2, Model::Head
-	C: "OO",72697349,74102743
+	C: "OO",79895882,75517360
 
 	;Model::ConPt_Ear, Model::Head
-	C: "OO",76014394,74102743
+	C: "OO",71274058,75517360
 
 	;Model::ConPt_Ear2, Model::Head
-	C: "OO",73926092,74102743
+	C: "OO",72136690,75517360
 
 	;Model::ConPt_Eye, Model::Head
-	C: "OO",75272916,74102743
+	C: "OO",70016714,75517360
 
 	;Model::ConPt_Eye2, Model::Head
-	C: "OO",72096651,74102743
+	C: "OO",78838308,75517360
 
 	;Model::ConPt_Tooth, Model::Head
-	C: "OO",79744832,74102743
+	C: "OO",76255974,75517360
 
 	;Model::ConPt_Tooth2, Model::Head
-	C: "OO",76860558,74102743
+	C: "OO",77031613,75517360
 
 	;Model::ConPt_Tail, Model::BodyLower
-	C: "OO",78950758,72441384
+	C: "OO",72847592,70667083
 
 	;Model::Arm2, Model::BodyUpper
-	C: "OO",74280089,72981838
+	C: "OO",74851764,79618579
 
 	;Model::LowArm2, Model::Arm2
-	C: "OO",74398370,74280089
+	C: "OO",71438579,74851764
 
 	;Model::Leg2, Model::BodyLower
-	C: "OO",74496703,72441384
+	C: "OO",76422691,70667083
 
 	;Model::LowLeg2, Model::Leg2
-	C: "OO",77110918,74496703
+	C: "OO",77693116,76422691
 
 	;Model::beveled_cuboid, Model::Head
-	C: "OO",78811932,74102743
+	C: "OO",78064696,75517360
 
 	;Geometry::beveled_cuboid, Model::beveled_cuboid
-	C: "OO",77474566,78811932
+	C: "OO",79222811,78064696
 
 	;Material::Tex_FB_Body_Piebald_8.png, Model::beveled_cuboid
-	C: "OO",71451030,78811932
+	C: "OO",73718684,78064696
 
 	;Model::beveled_cuboid_1, Model::Jaw
-	C: "OO",76564280,74685519
+	C: "OO",75879477,79043633
 
 	;Geometry::beveled_cuboid_1, Model::beveled_cuboid_1
-	C: "OO",75289859,76564280
+	C: "OO",76745682,75879477
 
 	;Material::Tex_FB_Body_Piebald_8.png, Model::beveled_cuboid_1
-	C: "OO",71451030,76564280
+	C: "OO",73718684,75879477
 
 	;Model::beveled_cuboid_2, Model::BodyUpper
-	C: "OO",70407875,72981838
+	C: "OO",74630248,79618579
 
 	;Geometry::beveled_cuboid_2, Model::beveled_cuboid_2
-	C: "OO",77798901,70407875
+	C: "OO",73120876,74630248
 
 	;Material::Tex_FB_Body_Piebald_8.png, Model::beveled_cuboid_2
-	C: "OO",71451030,70407875
+	C: "OO",73718684,74630248
 
 	;Model::beveled_cuboid_3, Model::Body
-	C: "OO",79535664,72816339
+	C: "OO",72119807,73200834
 
 	;Geometry::beveled_cuboid_3, Model::beveled_cuboid_3
-	C: "OO",71397227,79535664
+	C: "OO",76518776,72119807
 
 	;Material::Tex_FB_Body_Piebald_8.png, Model::beveled_cuboid_3
-	C: "OO",71451030,79535664
+	C: "OO",73718684,72119807
 
 	;Model::beveled_cuboid_4, Model::BodyLower
-	C: "OO",71218876,72441384
+	C: "OO",70347296,70667083
 
 	;Geometry::beveled_cuboid_4, Model::beveled_cuboid_4
-	C: "OO",73254356,71218876
+	C: "OO",78510276,70347296
 
 	;Material::Tex_FB_Body_Piebald_8.png, Model::beveled_cuboid_4
-	C: "OO",71451030,71218876
+	C: "OO",73718684,70347296
 
 	;Model::beveled_cuboid_5, Model::Arm
-	C: "OO",78202980,76884939
+	C: "OO",75550081,72550843
 
 	;Geometry::beveled_cuboid_5, Model::beveled_cuboid_5
-	C: "OO",75498248,78202980
+	C: "OO",70122689,75550081
 
 	;Material::Tex_FB_Body_Piebald_8.png, Model::beveled_cuboid_5
-	C: "OO",71451030,78202980
+	C: "OO",73718684,75550081
 
 	;Model::beveled_cuboid_6, Model::LowArm
-	C: "OO",75523163,71447323
+	C: "OO",77327348,73142500
 
 	;Geometry::beveled_cuboid_6, Model::beveled_cuboid_6
-	C: "OO",73067936,75523163
+	C: "OO",78066027,77327348
 
 	;Material::Tex_FB_Body_Piebald_8.png, Model::beveled_cuboid_6
-	C: "OO",71451030,75523163
+	C: "OO",73718684,77327348
 
 	;Model::beveled_cuboid_7, Model::Leg
-	C: "OO",73722100,71760187
+	C: "OO",75551332,77755391
 
 	;Geometry::beveled_cuboid_7, Model::beveled_cuboid_7
-	C: "OO",74449133,73722100
+	C: "OO",77415747,75551332
 
 	;Material::Tex_FB_Body_Piebald_8.png, Model::beveled_cuboid_7
-	C: "OO",71451030,73722100
+	C: "OO",73718684,75551332
 
 	;Model::beveled_cuboid_8, Model::LowLeg
-	C: "OO",73759645,73893043
+	C: "OO",79808631,72238127
 
 	;Geometry::beveled_cuboid_8, Model::beveled_cuboid_8
-	C: "OO",77209040,73759645
+	C: "OO",74781517,79808631
 
 	;Material::Tex_FB_Body_Piebald_8.png, Model::beveled_cuboid_8
-	C: "OO",71451030,73759645
+	C: "OO",73718684,79808631
 
 	;Model::beveled_cuboid_9, Model::Arm2
-	C: "OO",76515960,74280089
+	C: "OO",75617639,74851764
 
 	;Geometry::beveled_cuboid_9, Model::beveled_cuboid_9
-	C: "OO",72589676,76515960
+	C: "OO",74372446,75617639
 
 	;Material::Tex_FB_Body_Piebald_8.png, Model::beveled_cuboid_9
-	C: "OO",71451030,76515960
+	C: "OO",73718684,75617639
 
 	;Model::beveled_cuboid_10, Model::LowArm2
-	C: "OO",78497194,74398370
+	C: "OO",75098202,71438579
 
 	;Geometry::beveled_cuboid_10, Model::beveled_cuboid_10
-	C: "OO",76527341,78497194
+	C: "OO",79063661,75098202
 
 	;Material::Tex_FB_Body_Piebald_8.png, Model::beveled_cuboid_10
-	C: "OO",71451030,78497194
+	C: "OO",73718684,75098202
 
 	;Model::beveled_cuboid_11, Model::Leg2
-	C: "OO",73822532,74496703
+	C: "OO",74447276,76422691
 
 	;Geometry::beveled_cuboid_11, Model::beveled_cuboid_11
-	C: "OO",72162505,73822532
+	C: "OO",78113364,74447276
 
 	;Material::Tex_FB_Body_Piebald_8.png, Model::beveled_cuboid_11
-	C: "OO",71451030,73822532
+	C: "OO",73718684,74447276
 
 	;Model::beveled_cuboid_12, Model::LowLeg2
-	C: "OO",79235688,77110918
+	C: "OO",73178184,77693116
 
 	;Geometry::beveled_cuboid_12, Model::beveled_cuboid_12
-	C: "OO",74478705,79235688
+	C: "OO",74495029,73178184
 
 	;Material::Tex_FB_Body_Piebald_8.png, Model::beveled_cuboid_12
-	C: "OO",71451030,79235688
+	C: "OO",73718684,73178184
 
 	;Texture::Tex_FB_Body_Tortoise_Speckled.png, Material::Tex_FB_Body_Tortoise_Speckled.png
-	C: "OP",79213221,71054514, "DiffuseColor"
+	C: "OP",79240949,76576705, "DiffuseColor"
 
 	;Video::Tex_FB_Body_Tortoise_Speckled.png, Texture::Tex_FB_Body_Tortoise_Speckled.png
-	C: "OO",73250519,79213221
+	C: "OO",77578535,79240949
 
 	;Texture::Tex_FB_Body_Tortoise_Split.png, Material::Tex_FB_Body_Tortoise_Split.png
-	C: "OP",76725156,71191513, "DiffuseColor"
+	C: "OP",74943191,78183734, "DiffuseColor"
 
 	;Video::Tex_FB_Body_Tortoise_Split.png, Texture::Tex_FB_Body_Tortoise_Split.png
-	C: "OO",70076983,76725156
+	C: "OO",79714636,74943191
 
 	;Texture::Tex_FB_Body_Piebald_0.png, Material::Tex_FB_Body_Piebald_0.png
-	C: "OP",73629575,74564526, "DiffuseColor"
+	C: "OP",74735893,77348484, "DiffuseColor"
 
 	;Video::Tex_FB_Body_Piebald_0.png, Texture::Tex_FB_Body_Piebald_0.png
-	C: "OO",72107646,73629575
+	C: "OO",79636174,74735893
 
 	;Texture::Tex_FB_Body_Piebald_1.png, Material::Tex_FB_Body_Piebald_1.png
-	C: "OP",79020339,79864835, "DiffuseColor"
+	C: "OP",78197355,79713972, "DiffuseColor"
 
 	;Video::Tex_FB_Body_Piebald_1.png, Texture::Tex_FB_Body_Piebald_1.png
-	C: "OO",72105039,79020339
+	C: "OO",79912680,78197355
 
 	;Texture::Tex_FB_Body_Piebald_2.png, Material::Tex_FB_Body_Piebald_2.png
-	C: "OP",72391641,76678238, "DiffuseColor"
+	C: "OP",79034190,70458421, "DiffuseColor"
 
 	;Video::Tex_FB_Body_Piebald_2.png, Texture::Tex_FB_Body_Piebald_2.png
-	C: "OO",71295677,72391641
+	C: "OO",77714483,79034190
 
 	;Texture::Tex_FB_Body_Piebald_3.png, Material::Tex_FB_Body_Piebald_3.png
-	C: "OP",76054314,70757280, "DiffuseColor"
+	C: "OP",74595823,79162807, "DiffuseColor"
 
 	;Video::Tex_FB_Body_Piebald_3.png, Texture::Tex_FB_Body_Piebald_3.png
-	C: "OO",78694729,76054314
+	C: "OO",78325951,74595823
 
 	;Texture::Tex_FB_Body_Piebald_4.png, Material::Tex_FB_Body_Piebald_4.png
-	C: "OP",79338969,77926981, "DiffuseColor"
+	C: "OP",70866024,78366368, "DiffuseColor"
 
 	;Video::Tex_FB_Body_Piebald_4.png, Texture::Tex_FB_Body_Piebald_4.png
-	C: "OO",79814275,79338969
+	C: "OO",79110703,70866024
 
 	;Texture::Tex_FB_Body_Piebald_5.png, Material::Tex_FB_Body_Piebald_5.png
-	C: "OP",79680988,72006345, "DiffuseColor"
+	C: "OP",73417708,74070280, "DiffuseColor"
 
 	;Video::Tex_FB_Body_Piebald_5.png, Texture::Tex_FB_Body_Piebald_5.png
-	C: "OO",77391754,79680988
+	C: "OO",78786195,73417708
 
 	;Texture::Tex_FB_Body_Piebald_6.png, Material::Tex_FB_Body_Piebald_6.png
-	C: "OP",77483697,78636618, "DiffuseColor"
+	C: "OP",79411732,79645106, "DiffuseColor"
 
 	;Video::Tex_FB_Body_Piebald_6.png, Texture::Tex_FB_Body_Piebald_6.png
-	C: "OO",75805574,77483697
+	C: "OO",79192654,79411732
 
 	;Texture::Tex_FB_Body_Piebald_7.png, Material::Tex_FB_Body_Piebald_7.png
-	C: "OP",78151467,77307802, "DiffuseColor"
+	C: "OP",78701281,77067158, "DiffuseColor"
 
 	;Video::Tex_FB_Body_Piebald_7.png, Texture::Tex_FB_Body_Piebald_7.png
-	C: "OO",75642336,78151467
+	C: "OO",78300684,78701281
 
 	;Texture::Tex_FB_Body_Piebald_8.png, Material::Tex_FB_Body_Piebald_8.png
-	C: "OP",77911540,71451030, "DiffuseColor"
+	C: "OP",73007952,73718684, "DiffuseColor"
 
 	;Video::Tex_FB_Body_Piebald_8.png, Texture::Tex_FB_Body_Piebald_8.png
-	C: "OO",79055621,77911540
+	C: "OO",73089086,73007952
 
 	;Texture::Tex_FB_Body_Piebald_9.png, Material::Tex_FB_Body_Piebald_9.png
-	C: "OP",78386821,78637862, "DiffuseColor"
+	C: "OP",79865763,70122001, "DiffuseColor"
 
 	;Video::Tex_FB_Body_Piebald_9.png, Texture::Tex_FB_Body_Piebald_9.png
-	C: "OO",76838286,78386821
+	C: "OO",72171713,79865763
 }
 
 ; Takes section

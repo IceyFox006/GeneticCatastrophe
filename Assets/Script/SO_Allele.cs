@@ -6,6 +6,7 @@
  * Contains data for an allele. Must be a subtype to be created.
  */
 using NaughtyAttributes;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class SO_Allele : ScriptableObject
@@ -18,6 +19,6 @@ public class SO_Allele : ScriptableObject
     //Dictionary<string, TYPE> data containing information for what object it affects and how it is effecting it.
 
     //Applies the allele.
-    public virtual void ApplyComplete(Transform p) { }
-    public virtual void ApplyIncomplete(Transform p, int aNum) { }
+    public virtual void ApplyComplete(GeneController gc, out List<Transform> affected) { affected = new List<Transform>(); }
+    public virtual void ApplyIncomplete(GeneController gc, int aNum) { }
 }

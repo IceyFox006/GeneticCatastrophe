@@ -11,13 +11,13 @@ FBXHeaderExtension:  {
 		Version: 1000
 		Year: 2026
 		Month: 10
-		Day: 8
-		Hour: 9
-		Minute: 47
-		Second: 6
-		Millisecond: 459
+		Day: 22
+		Hour: 11
+		Minute: 57
+		Second: 22
+		Millisecond: 672
 	}
-	Creator: "Blockbench 5.2.1"
+	Creator: "Blockbench 5.2.2"
 	SceneInfo: "SceneInfo::GlobalInfo", "UserData" {
 		Type: "UserData"
 		Version: 100
@@ -36,20 +36,20 @@ FBXHeaderExtension:  {
 			P: "Original", "Compound", "", ""
 			P: "Original|ApplicationVendor", "KString", "", "", "Blockbench"
 			P: "Original|ApplicationName", "KString", "", "", "Blockbench FBX Exporter"
-			P: "Original|ApplicationVersion", "KString", "", "", "5.2.1"
+			P: "Original|ApplicationVersion", "KString", "", "", "5.2.2"
 			P: "Original|DateTime_GMT", "DateTime", "", "", "01/01/1970 00:00:00.000"
 			P: "Original|FileName", "KString", "", "", "/foobar.fbx"
 			P: "LastSaved", "Compound", "", ""
 			P: "LastSaved|ApplicationVendor", "KString", "", "", "Blockbench"
 			P: "LastSaved|ApplicationName", "KString", "", "", "Blockbench FBX Exporter"
-			P: "LastSaved|ApplicationVersion", "KString", "", "", "5.2.1"
+			P: "LastSaved|ApplicationVersion", "KString", "", "", "5.2.2"
 			P: "LastSaved|DateTime_GMT", "DateTime", "", "", "01/01/1970 00:00:00.000"
 			P: "Original|ApplicationNativeFile", "KString", "", "", ""
 		}
 	}
 }
 FileId: "iVFoobar"
-CreationTime: "2026-10-08 14:47:06:459"
+CreationTime: "2026-10-22 16:57:22:672"
 Creator: "Made with Blockbench"
 GlobalSettings:  {
 	Version: 1000
@@ -78,7 +78,7 @@ GlobalSettings:  {
 
 Documents:  {
 	Count: 1
-	Document: 1235556817 {
+	Document: 628277320 {
 		Scene: "Scene"
 		Properties70:  {
 			P: "SourceObject", "object", "", ""
@@ -98,7 +98,7 @@ References:
 
 Definitions:  {
 	Version: 100
-	Count: 7
+	Count: 4
 	ObjectType: "GlobalSettings" {
 		Count: 1
 	}
@@ -193,82 +193,13 @@ Definitions:  {
 			}
 		}
 	}
-	ObjectType: "Material" {
-		Count: 1
-		PropertyTemplate: "FbxSurfaceLambert" {
-			Properties70:  {
-				P: "ShadingModel", "KString", "", "", "Lambert"
-				P: "MultiLayer", "bool", "", "",0
-				P: "EmissiveColor", "Color", "", "A",0,0,0
-				P: "EmissiveFactor", "Number", "", "A",1
-				P: "AmbientColor", "Color", "", "A",0.2,0.2,0.2
-				P: "AmbientFactor", "Number", "", "A",1
-				P: "DiffuseColor", "Color", "", "A",0.8,0.8,0.8
-				P: "DiffuseFactor", "Number", "", "A",1
-				P: "Bump", "Vector3D", "Vector", "",0,0,0
-				P: "NormalMap", "Vector3D", "Vector", "",0,0,0
-				P: "BumpFactor", "double", "Number", "",1
-				P: "TransparentColor", "Color", "", "A",0,0,0
-				P: "TransparencyFactor", "Number", "", "A",0
-				P: "DisplacementColor", "ColorRGB", "Color", "",0,0,0
-				P: "DisplacementFactor", "double", "Number", "",1
-				P: "VectorDisplacementColor", "ColorRGB", "Color", "",0,0,0
-				P: "VectorDisplacementFactor", "double", "Number", "",1
-			}
-		}
-	}
-	ObjectType: "Texture" {
-		Count: 1
-		PropertyTemplate: "FbxFileTexture" {
-			Properties70:  {
-				P: "TextureTypeUse", "enum", "", "",0
-				P: "Texture alpha", "Number", "", "A",1
-				P: "CurrentMappingType", "enum", "", "",0
-				P: "WrapModeU", "enum", "", "",0
-				P: "WrapModeV", "enum", "", "",0
-				P: "UVSwap", "bool", "", "",0
-				P: "PremultiplyAlpha", "bool", "", "",1
-				P: "Translation", "Vector", "", "A",0,0,0
-				P: "Rotation", "Vector", "", "A",0,0,0
-				P: "Scaling", "Vector", "", "A",1,1,1
-				P: "TextureRotationPivot", "Vector3D", "Vector", "",0,0,0
-				P: "TextureScalingPivot", "Vector3D", "Vector", "",0,0,0
-				P: "CurrentTextureBlendMode", "enum", "", "",1
-				P: "UVSet", "KString", "", "", "default"
-				P: "UseMaterial", "bool", "", "",0
-				P: "UseMipMap", "bool", "", "",0
-			}
-		}
-	}
-	ObjectType: "Video" {
-		Count: 1
-		PropertyTemplate: "FbxVideo" {
-			Properties70:  {
-				P: "ImageSequence", "bool", "", "",0
-				P: "ImageSequenceOffset", "int", "Integer", "",0
-				P: "FrameRate", "double", "Number", "",0
-				P: "LastFrame", "int", "Integer", "",0
-				P: "Width", "int", "Integer", "",0
-				P: "Height", "int", "Integer", "",0
-				P: "Path", "KString", "XRefUrl", "", ""
-				P: "StartFrame", "int", "Integer", "",0
-				P: "StopFrame", "int", "Integer", "",0
-				P: "PlaySpeed", "double", "Number", "",0
-				P: "Offset", "KTime", "Time", "",0
-				P: "InterlaceMode", "enum", "", "",0
-				P: "FreeRunning", "bool", "", "",0
-				P: "Loop", "bool", "", "",0
-				P: "AccessMode", "enum", "", "",0
-			}
-		}
-	}
 }
 
 ; Object properties
 ;------------------------------------------------------------------
 
 Objects:  {
-	Model: 75270428, "Model::Eye", "Null" {
+	Model: 76713705, "Model::Eye", "Null" {
 		Version: 232
 		Properties70:  {
 			P: "RotationActive", "bool", "", "",1
@@ -282,13 +213,13 @@ Objects:  {
 		Shading: Y
 		Culling: "CullingOff"
 	}
-	Model: 77478352, "Model::mesh", "Mesh" {
+	Model: 77658779, "Model::beveled_cuboid", "Mesh" {
 		Version: 232
 		Properties70:  {
 			P: "RotationActive", "bool", "", "",1
 			P: "InheritType", "enum", "", "",1
 			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
-			P: "Lcl Translation", "Lcl Translation", "", "A",0,0,0
+			P: "Lcl Translation", "Lcl Translation", "", "A",0,-18.75,0
 			P: "RotationPivot", "Vector3D", "Vector", "",0,0,0
 			P: "Lcl Rotation", "Lcl Rotation", "", "A",0,0,0
 			P: "RotationOrder", "enum", "", "",5
@@ -297,12 +228,12 @@ Objects:  {
 		Shading: Y
 		Culling: "CullingOff"
 	}
-	Geometry: 71736211, "Geometry::mesh", "Mesh" {
-		Vertices: *24 {
-			a: 12.5,12.5,12.5,12.5,12.5,-12.5,12.5,-12.5,12.5,12.5,-12.5,-12.5,-12.5,12.5,12.5,-12.5,12.5,-12.5,-12.5,-12.5,12.5,-12.5,-12.5,-12.5
+	Geometry: 77403782, "Geometry::beveled_cuboid", "Mesh" {
+		Vertices: *72 {
+			a: 10.4166875,34.375,10.416640625,10.4166875,34.375,-10.416640625,-10.4166875,34.375,10.416640625,-10.4166875,34.375,-10.416640625,10.4166875,3.125,10.416640625,10.4166875,3.125,-10.416640625,-10.4166875,3.125,10.416640625,-10.4166875,3.125,-10.416640625,-15.625,8.3333125,10.416640625,-15.625,29.1666875,10.416640625,-15.625,8.3333125,-10.416640625,-15.625,29.1666875,-10.416640625,15.625,8.3333125,10.416640625,15.625,29.1666875,10.416640625,15.625,8.3333125,-10.416640625,15.625,29.1666875,-10.416640625,10.4166875,8.3333125,-15.625,10.4166875,29.1666875,-15.625,-10.4166875,8.3333125,-15.625,-10.4166875,29.1666875,-15.625,10.4166875,8.3333125,15.625,10.4166875,29.1666875,15.625,-10.4166875,8.3333125,15.625,-10.4166875,29.1666875,15.625
 		}
-		PolygonVertexIndex: *24 {
-			a: 1,0,2,-4,6,4,5,-8,4,0,1,-6,3,2,6,-8,2,0,4,-7,5,1,3,-8
+		PolygonVertexIndex: *96 {
+			a: 15,13,12,-15,8,9,11,-11,0,1,3,-3,7,5,4,-7,20,21,23,-23,19,17,16,-19,1,0,13,-16,9,2,3,-12,21,0,2,-24,3,1,17,-20,12,4,5,-15,7,6,8,-11,6,4,20,-23,16,5,7,-19,14,16,17,-16,21,20,12,-14,19,18,10,-12,8,22,23,-10,4,12,-21,6,22,-9,5,16,-15,7,10,-19,0,21,-14,2,9,-24,1,15,-18,3,19,-12
 		}
 		GeometryVersion: 124
 		LayerElementNormal: 0 {
@@ -310,8 +241,8 @@ Objects:  {
 			Name: ""
 			MappingInformationType: "ByPolygon"
 			ReferenceInformationType: "Direct"
-			Normals: *18 {
-				a: 1,0,0,-1,0,0,0,1,0,0,-1,0,0,0,1,0,0,-1
+			Normals: *78 {
+				a: 1,0,0,-1,0,0,0,1,0,0,-1,0,0,0,1,0,0,-1,0.7071067811865476,0.7071067811865474,0,-0.7071067811865476,0.7071067811865474,0,0,0.7071099631583123,0.7071035992004638,0,0.7071099631583123,-0.7071035992004638,0.7071067811865476,-0.7071067811865476,0,-0.7071067811865476,-0.7071067811865476,0,0,-0.7071099631583125,0.7071035992004637,0,-0.7071099631583125,-0.7071035992004637,0.7071099631583124,0,-0.7071035992004637,0.7071099631583124,0,0.7071035992004637,-0.7071099631583124,0,-0.7071035992004637,-0.7071099631583124,0,0.7071035992004637,0.5773520012317732,-0.5773520012317732,0.5773468050897427,-0.5773520012317732,-0.5773520012317732,0.5773468050897427,0.5773520012317732,-0.5773520012317732,-0.5773468050897427,-0.5773520012317732,-0.5773520012317732,-0.5773468050897427,0.5773520012317731,0.577352001231773,0.5773468050897427,-0.5773520012317731,0.577352001231773,0.5773468050897427,0.5773520012317731,0.577352001231773,-0.5773468050897427,-0.5773520012317731,0.577352001231773,-0.5773468050897427
 			}
 		}
 		LayerElementUV: 0 {
@@ -319,8 +250,8 @@ Objects:  {
 			Name: ""
 			MappingInformationType: "ByPolygonVertex"
 			ReferenceInformationType: "Direct"
-			UV: *48 {
-				a: 0.25,1,0,1,0,0.75,0.25,0.75,0.25,0.4375,0.25,0.6875,0,0.6875,0,0.4375,0.3125,0.75,0.5625,0.75,0.5625,1,0.3125,1,0.5625,0.4375,0.5625,0.6875,0.3125,0.6875,0.3125,0.4375,0.25,0.125,0.25,0.375,0,0.375,0,0.125,0.875,1,0.625,1,0.625,0.75,0.875,0.75
+			UV: *192 {
+				a: 0.25,1,0,1,0,0.75,0.25,0.75,0.25,0.75,0.25,1,0,1,0,0.75,0.25,0.75,0.25,1,0,1,0,0.75,0,0.75,0.25,0.75,0.25,1,0,1,0.25,0.75,0.25,1,0,1,0,0.75,0.25,1,0,1,0,0.75,0.25,0.75,0.25,1,0,1,0,0.9116125,0.25,0.9116125,0.25,0.9116125,0.25,1,0,1,0,0.9116125,0.25,0.9116125,0.25,1,0,1,0,0.9116125,0.25,1,0,1,0,0.9116125,0.25,0.9116125,0,1,0,0.9116125,0.25,0.9116125,0.25,1,0,0.9116125,0.25,0.9116125,0.25,1,0,1,0,0.9116125,0.25,0.9116125,0.25,1,0,1,0,1,0,0.9116125,0.25,0.9116125,0.25,1,0,0.75,0.0883875,0.75,0.0883875,1,0,1,0,1,0,0.75,0.0883875,0.75,0.0883875,1,0,1,0,0.75,0.0883875,0.75,0.0883875,1,0,0.75,0.0883875,0.75,0.0883875,1,0,1,0.04419375,0.92345625,0.0883875,1,0,1,0.04419375,0.92345625,0.0883875,1,0,1,0.04419375,0.92345625,0.0883875,1,0,1,0.04419375,0.92345625,0.0883875,1,0,1,0.04419375,1,0,0.92345,0.0883875,0.92345,0.04419375,1,0,0.92345,0.0883875,0.92345,0.04419375,1,0,0.92345,0.0883875,0.92345,0.04419375,1,0,0.92345,0.0883875,0.92345
 			}
 		}
 		LayerElementMaterial: 0 {
@@ -348,38 +279,6 @@ Objects:  {
 			}
 		}
 	}
-	Material: 74787503, "Material::Tex_FB_Eye_Cat.png", "" {
-		Version: 102
-		ShadingModel: "lambert"
-		MultiLayer: 0
-		Properties70:  {
-			P: "Emissive", "Vector3D", "Vector", "",0,0,0
-			P: "Ambient", "Vector3D", "Vector", "",0.2,0.2,0.2
-			P: "Diffuse", "Vector3D", "Vector", "",0.8,0.8,0.8
-			P: "Opacity", "double", "Number", "",1
-		}
-	}
-	Texture: 74089570, "Texture::Tex_FB_Eye_Cat.png", "" {
-		Type: "TextureVideoClip"
-		Version: 202
-		TextureName: "Texture::Tex_FB_Eye_Cat.png"
-		Media: "Video::Tex_FB_Eye_Cat.png"
-		FileName: "C:\Users\crgre\OneDrive\Desktop\GameDevelopment\PersonalProjects\GeneticCATastropheII\External\Model\Eye\Tex_FB_Eye_Cat_1.png"
-		RelativeFilename: "Tex_FB_Eye_Cat.png"
-		ModelUVTranslation: 0,0
-		ModelUVScaling: 1,1
-		Texture_Alpha_Source: "None"
-		Cropping: 0,0,0,0
-	}
-	Video: 79349346, "Video::Tex_FB_Eye_Cat.png", "Clip" {
-		Type: "Clip"
-		Properties70:  {
-			P: "Path", "KString", "XRefUrl", "", "C:\Users\crgre\OneDrive\Desktop\GameDevelopment\PersonalProjects\GeneticCATastropheII\External\Model\Eye\Tex_FB_Eye_Cat_1.png"
-		}
-		UseMipMap: 0
-		Filename: "C:\Users\crgre\OneDrive\Desktop\GameDevelopment\PersonalProjects\GeneticCATastropheII\External\Model\Eye\Tex_FB_Eye_Cat_1.png"
-		RelativeFilename: "Tex_FB_Eye_Cat.png"
-	}
 }
 
 ; Object connections
@@ -388,22 +287,13 @@ Objects:  {
 Connections:  {
 
 	;Model::Eye, Model::RootNode
-	C: "OO",75270428,0
+	C: "OO",76713705,0
 
-	;Model::mesh, Model::Eye
-	C: "OO",77478352,75270428
+	;Model::beveled_cuboid, Model::Eye
+	C: "OO",77658779,76713705
 
-	;Geometry::mesh, Model::mesh
-	C: "OO",71736211,77478352
-
-	;Material::Tex_FB_Eye_Cat.png, Model::mesh
-	C: "OO",74787503,77478352
-
-	;Texture::Tex_FB_Eye_Cat.png, Material::Tex_FB_Eye_Cat.png
-	C: "OP",74089570,74787503, "DiffuseColor"
-
-	;Video::Tex_FB_Eye_Cat.png, Texture::Tex_FB_Eye_Cat.png
-	C: "OO",79349346,74089570
+	;Geometry::beveled_cuboid, Model::beveled_cuboid
+	C: "OO",77403782,77658779
 }
 
 ; Takes section
