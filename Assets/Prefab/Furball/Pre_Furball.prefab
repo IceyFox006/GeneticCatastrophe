@@ -164,7 +164,7 @@ MonoBehaviour:
     value:
       _autoInitialize: 1
       gene: {fileID: 0}
-      _allele1: {fileID: 11400000, guid: 00d2b5492849d644cb84494985915ffa, type: 2}
+      _allele1: {fileID: 11400000, guid: 8fca4d8d2cdb3094381a8a05a37e85ac, type: 2}
       _allele2: {fileID: 11400000, guid: 8fca4d8d2cdb3094381a8a05a37e85ac, type: 2}
   - key: {fileID: 11400000, guid: 88045d18e5ac5c246b6c8dba05954206, type: 2}
     value:
@@ -191,6 +191,7 @@ MonoBehaviour:
     _spotDensityGene: {fileID: 11400000, guid: f936984a7a57ed7489b00dd09c3fef9c, type: 2}
     _spotDensityAllele1: {fileID: 11400000, guid: 57f90180059de1b4cbf1ffcbdc052f97, type: 2}
     _spotDensityAllele2: {fileID: 11400000, guid: 131c7580ecfc6f14394228b2cb21e94d, type: 2}
+    _noSpotsAllele: {fileID: 11400000, guid: 22a5bfd18982dcd4dbaf2da1c8f12184, type: 2}
     _gradeAlleles:
     - {fileID: 11400000, guid: 4ed1a2a6c5c00a240978e108b3bb0ada, type: 2}
     - {fileID: 11400000, guid: 97071fcf3740c11439defc32619b7205, type: 2}

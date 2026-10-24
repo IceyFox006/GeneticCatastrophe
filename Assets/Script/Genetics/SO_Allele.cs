@@ -16,6 +16,10 @@ public class SO_Allele : ScriptableObject
     [SerializeField, BoxGroup("General"), ResizableTextArea]
     protected string _description;
 
+    #region GS
+    public string Name { get => _name; }
+    #endregion
+
     //Dictionary<string, TYPE> data containing information for what object it affects and how it is effecting it.
 
     //Applies the allele.

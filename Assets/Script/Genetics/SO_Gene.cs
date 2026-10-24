@@ -30,6 +30,9 @@ public class SO_Gene : ScriptableObject
     public EDominanceType DominanceType { get => _dominanceType; }
     #endregion
 
+    public SO_Allele RandomAllele()
+        => _alleles[Random.Range(0, _alleles.Length)];
+
     //Returns the index of the allele.
     public int FindAllele(SO_Allele a)
     {
