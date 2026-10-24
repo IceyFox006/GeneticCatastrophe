@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SO_Allele_Float
   _name: Spots
   _description: 
-  _floatData: 0
+  _floatData: 2

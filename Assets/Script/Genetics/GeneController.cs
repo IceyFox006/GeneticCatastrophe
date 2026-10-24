@@ -1,7 +1,7 @@
 /*
  * Marlow Greenan
  * Created: 10/06/2026
- * Last Updated: 10/22/1026 by Marlow Greenan
+ * Last Updated: 10/24/1026 by Marlow Greenan
  * 
  * 
  */
@@ -9,27 +9,32 @@ using MarUtility;
 using MarUtility.ExecutionManagement;
 using NaughtyAttributes;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
+//=================================================================================================================
+// GENE CONTROLLER
+//=================================================================================================================
 public class GeneController : Manager
 {
     //GENOTYPES
-    //General
+    //Model
     [SerializeField, BoxGroup("Genotype")]
     private Dictionary<SO_Gene, ActGene> _modelGenotype;
     private MeshRenderer[] bodyMeshes;
     [SerializeField, ReadOnly]
     private List<Transform> partTransforms = new List<Transform>();
 
+    //Texture
     [SerializeField, BoxGroup("Genotype")]
     private Dictionary<SO_Gene, ActGene> _textureGenotype;
-
-    [SerializeField, BoxGroup("Genotype")]
-    private Dictionary<SO_Gene, ActGene> _colorGenotype;
-
     //Piebald
     [SerializeField, BoxGroup("Genotype")]
     private PiebaldGenotype _piebaldGenotype;
+
+    //Color
+    [SerializeField, BoxGroup("Genotype")]
+    private Dictionary<SO_Gene, ActGene> _colorGenotype;
 
     //VISUAL
     [SerializeField, BoxGroup("Visual"), Label("Genetics Material")]
@@ -44,19 +49,34 @@ public class GeneController : Manager
     {
         base.Initialize();
 
-        InitializeAndApplyGenotypes();
+        InitializeGenotypes();
+        ApplyGenotypes();
     }
-    
-    //Initializes and applies all genotypes.
-    private void InitializeAndApplyGenotypes()
+
+    //Initializes Genotypes
+    private void InitializeGenotypes()
     {
-        //MODEL
+        //Model
         bodyMeshes = GetComponentsInChildren<MeshRenderer>();
         foreach (KeyValuePair<SO_Gene, ActGene> kvp in _modelGenotype)
-        {
             kvp.Value.Initialize(kvp.Key, this);
+
+        //Texture
+        foreach (KeyValuePair<SO_Gene, ActGene> kvp in _textureGenotype)
+            kvp.Value.Initialize(kvp.Key, this);
+        _piebaldGenotype.Initialize(this);
+
+        //Color
+        foreach (KeyValuePair<SO_Gene, ActGene> kvp in _colorGenotype)
+            kvp.Value.Initialize(kvp.Key, this);
+    }
+
+    //Applies genotypes.
+    private void ApplyGenotypes()
+    {
+        //MODEL
+        foreach (KeyValuePair<SO_Gene, ActGene> kvp in _modelGenotype)
             MarData.CombineTransformLists(ref partTransforms, kvp.Value.Apply());
-        }
 
         //TEXTURE
         //Sets the material of every renderer that is not already a variation of the _mat shader to _mat.
@@ -67,21 +87,52 @@ public class GeneController : Manager
         }
         //Initializes default texture genes.
         foreach (KeyValuePair<SO_Gene, ActGene> kvp in _textureGenotype)
-        {
-            kvp.Value.Initialize(kvp.Key, this);
             kvp.Value.Apply();
-        }
         //Piebald
-        _piebaldGenotype.Initialize(this);
         _piebaldGenotype.Apply();
 
         //COLOR
         foreach (KeyValuePair<SO_Gene, ActGene> kvp in _colorGenotype)
-        {
-            kvp.Value.Initialize(kvp.Key, this);
             kvp.Value.Apply();
-        }
     }
+
+    private void EraseGenotype()
+    {
+        //Destroy parts that were spawned in from the previous genotype.
+        for (int i = 0; i < partTransforms.Count; i++)
+            Destroy(partTransforms[i].gameObject);
+        partTransforms.Clear();
+
+        //Reset colors to default.
+        foreach (MeshRenderer mr in bodyMeshes)
+            mr.material = _mat;
+    }
+    #region Inspector
+    //Randomizes all alleles.
+    [Button]
+    private void RandomizeGenotype()
+    {
+        EraseGenotype();
+
+        //Model
+        foreach (KeyValuePair<SO_Gene, ActGene> kvp in _modelGenotype)
+            kvp.Value.Randomize();
+
+        //Texture
+        foreach (KeyValuePair<SO_Gene, ActGene> kvp in _textureGenotype)
+            kvp.Value.Randomize();
+        _piebaldGenotype.Randomize();
+
+        //Color
+        foreach (KeyValuePair<SO_Gene, ActGene> kvp in _colorGenotype)
+            kvp.Value.Randomize();
+
+        ApplyGenotypes();
+    }
+    #endregion
+
+    //=================================================================================================================
+    // PIEBALD GENOTYPE
     //=================================================================================================================
     [System.Serializable]
     private class PiebaldGenotype
@@ -106,6 +157,8 @@ public class GeneController : Manager
 
         //Patterns
         [SerializeField]
+        private SO_Allele_Float _noSpotsAllele;
+        [SerializeField]
         private SO_Allele_Texture[] _gradeAlleles;
 
         public void Initialize(GeneController gc)
@@ -113,17 +166,29 @@ public class GeneController : Manager
 
         public void Apply()
         {
+            //No spots phenotype (ss).
+            if (_piebaldAllele1 == _noSpotsAllele && _piebaldAllele2 == _noSpotsAllele)
+                return;
+
             //Piebald1 + Piebald2 + SpotDensity1 + SpotDensity2 + Random(0 - 2)
             float densityGrade = _piebaldAllele1.FloatData + _piebaldAllele2.FloatData + _spotDensityAllele1.FloatData + _spotDensityAllele2.FloatData + Random.Range(0, 3);
             int gradeIndex = Mathf.Clamp((int)(densityGrade - 1), 0, 9);
-
            
             _gradeAlleles[gradeIndex].ApplyComplete(gc);
+        }
+
+        public void Randomize()
+        {
+            _piebaldAllele1 = (SO_Allele_Float)_piebaldGene.RandomAllele();
+            _piebaldAllele2 = (SO_Allele_Float)_piebaldGene.RandomAllele();
+
+            _spotDensityAllele1 = (SO_Allele_Float)_spotDensityGene.RandomAllele();
+            _spotDensityAllele2 = (SO_Allele_Float)_spotDensityGene.RandomAllele();
         }
     }
 }
 //=====================================================================================================================
-//ACT GENE
+// ACT GENE
 //=====================================================================================================================
 [System.Serializable]
 public class ActGene
@@ -173,6 +238,13 @@ public class ActGene
         _allele2.ApplyIncomplete(gc, 1);
     }
     #endregion
+
+    //Randomizes both alleles.
+    public void Randomize()
+    {
+        _allele1 = gene.RandomAllele();
+        _allele2 = gene.RandomAllele();
+    }
 
     //Returns the allele with the highest dominance.
     private SO_Allele GetDominantAllele()
