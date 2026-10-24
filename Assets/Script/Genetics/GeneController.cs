@@ -1,7 +1,7 @@
 /*
  * Marlow Greenan
  * Created: 10/06/2026
- * Last Updated: 10/06/1026 by Marlow Greenan
+ * Last Updated: 10/22/1026 by Marlow Greenan
  * 
  * 
  */
@@ -14,6 +14,7 @@ using UnityEngine;
 public class GeneController : Manager
 {
     //GENOTYPES
+    //General
     [SerializeField, BoxGroup("Genotype")]
     private Dictionary<SO_Gene, ActGene> _modelGenotype;
     private MeshRenderer[] bodyMeshes;
@@ -25,6 +26,10 @@ public class GeneController : Manager
 
     [SerializeField, BoxGroup("Genotype")]
     private Dictionary<SO_Gene, ActGene> _colorGenotype;
+
+    //Piebald
+    [SerializeField, BoxGroup("Genotype")]
+    private PiebaldGenotype _piebaldGenotype;
 
     //VISUAL
     [SerializeField, BoxGroup("Visual"), Label("Genetics Material")]
@@ -60,17 +65,60 @@ public class GeneController : Manager
             if (mr.material.shader != _mat.shader)
                 mr.material = _mat;
         }
+        //Initializes default texture genes.
         foreach (KeyValuePair<SO_Gene, ActGene> kvp in _textureGenotype)
         {
             kvp.Value.Initialize(kvp.Key, this);
             kvp.Value.Apply();
         }
+        //Piebald
+        _piebaldGenotype.Initialize(this);
+        _piebaldGenotype.Apply();
 
         //COLOR
         foreach (KeyValuePair<SO_Gene, ActGene> kvp in _colorGenotype)
         {
             kvp.Value.Initialize(kvp.Key, this);
             kvp.Value.Apply();
+        }
+    }
+    //=================================================================================================================
+    [System.Serializable]
+    private class PiebaldGenotype
+    {
+        private GeneController gc;
+
+        //Piebald
+        [AllowNesting, SerializeField, BoxGroup("Piebald")]
+        private SO_Gene _piebaldGene;
+        [AllowNesting, SerializeField, BoxGroup("Piebald")]
+        private SO_Allele_Float _piebaldAllele1;
+        [AllowNesting, SerializeField, BoxGroup("Piebald")]
+        private SO_Allele_Float _piebaldAllele2;
+
+        //Spot Density
+        [AllowNesting, SerializeField, BoxGroup("Spot Density")]
+        private SO_Gene _spotDensityGene;
+        [AllowNesting, SerializeField, BoxGroup("Spot Density")]
+        private SO_Allele_Float _spotDensityAllele1;
+        [AllowNesting, SerializeField, BoxGroup("Spot Density")]
+        private SO_Allele_Float _spotDensityAllele2;
+
+        //Patterns
+        [SerializeField]
+        private SO_Allele_Texture[] _gradeAlleles;
+
+        public void Initialize(GeneController gc)
+            => this.gc = gc;
+
+        public void Apply()
+        {
+            //Piebald1 + Piebald2 + SpotDensity1 + SpotDensity2 + Random(0 - 2)
+            float densityGrade = _piebaldAllele1.FloatData + _piebaldAllele2.FloatData + _spotDensityAllele1.FloatData + _spotDensityAllele2.FloatData + Random.Range(0, 3);
+            int gradeIndex = Mathf.Clamp((int)(densityGrade - 1), 0, 9);
+
+           
+            _gradeAlleles[gradeIndex].ApplyComplete(gc);
         }
     }
 }
@@ -80,6 +128,10 @@ public class GeneController : Manager
 [System.Serializable]
 public class ActGene
 {
+    [SerializeField]
+    private bool _autoInitialize = true;
+
+    [AllowNesting, SerializeField, HideIf("_autoInitialize")]
     private SO_Gene gene;
     private GeneController gc;
 
@@ -95,6 +147,7 @@ public class ActGene
         this.gc = gc;
     }
 
+    #region Application
     public List<Transform> Apply()
     {
         List<Transform> affected = new List<Transform>();
@@ -119,9 +172,9 @@ public class ActGene
         _allele1.ApplyIncomplete(gc, 0);
         _allele2.ApplyIncomplete(gc, 1);
     }
+    #endregion
 
     //Returns the allele with the highest dominance.
     private SO_Allele GetDominantAllele()
         => (gene.FindAllele(_allele1) < gene.FindAllele(_allele2))? _allele1 : _allele2;
 }
-

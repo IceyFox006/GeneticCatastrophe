@@ -21,6 +21,10 @@ public class SO_Allele_Texture : SO_Allele
     private string _texID = "_Tex_";
 
     //Set mesh renderers materials and textures.
+    public override void ApplyComplete(GeneController gc)
+    {
+        base.ApplyComplete(gc);
+    }
     public override void ApplyComplete(GeneController gc, out List<Transform> affected)
     {
         base.ApplyComplete(gc, out affected);
