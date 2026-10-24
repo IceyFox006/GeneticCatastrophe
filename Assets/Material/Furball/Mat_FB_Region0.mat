@@ -81,6 +81,10 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _Tex_Piebald:
+        m_Texture: {fileID: 2800000, guid: f0d2c74dad2fa7843b4ca5d8b7b01b59, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _Tex_Tortoise:
         m_Texture: {fileID: 2800000, guid: 8ad9e7553976fb14786c6012a8636e72, type: 3}
         m_Scale: {x: 1, y: 1}

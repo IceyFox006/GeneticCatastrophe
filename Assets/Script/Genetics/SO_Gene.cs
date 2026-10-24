@@ -8,7 +8,7 @@
 using NaughtyAttributes;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "Gene_", menuName = "Scriptable Objects/Genetics/Gene")]
+[CreateAssetMenu(fileName = "Gene_", menuName = "Scriptable Objects/Genetics/Gene/Gene")]
 public class SO_Gene : ScriptableObject
 {
     [SerializeField]
@@ -19,6 +19,9 @@ public class SO_Gene : ScriptableObject
 
     [SerializeField]
     private EDominanceType _dominanceType;
+
+    [SerializeField]
+    private GenePrerequisite[] _prerequisite;
 
     [SerializeField]
     private SO_Allele[] _alleles;
@@ -38,7 +41,21 @@ public class SO_Gene : ScriptableObject
         return -1;
     }
 }
+//=====================================================================================================================
+[System.Serializable]
+public class GenePrerequisite
+{
+    
 
+
+
+    public enum EPrerequisiteType
+    {
+        ALLELE,
+
+    }
+}
+//=====================================================================================================================
 public enum EDominanceType
 {
     COMPLETE = 000,

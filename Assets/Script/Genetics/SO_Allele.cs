@@ -19,6 +19,11 @@ public class SO_Allele : ScriptableObject
     //Dictionary<string, TYPE> data containing information for what object it affects and how it is effecting it.
 
     //Applies the allele.
+    public virtual void ApplyComplete(GeneController gc) 
+    {
+        List<Transform> holder;
+        ApplyComplete(gc, out holder);
+    }
     public virtual void ApplyComplete(GeneController gc, out List<Transform> affected) { affected = new List<Transform>(); }
     public virtual void ApplyIncomplete(GeneController gc, int aNum) { }
 }
