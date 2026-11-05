@@ -13,23 +13,33 @@ public class Inventory : MonoBehaviour
     [SerializeField]
     private int _slotCount = 100;
     [SerializeField]
-    private List<ActItem> _items;
+    private List<ItemStack> _items;
 
     [SerializeField, BoxGroup("Simulation")]
-    private ActItem _simItem;
+    private int _simIndex;
+    [SerializeField, BoxGroup("Simulation")]
+    private ItemStack _simStack;
 
-    public void AddItem(ActItem item)
+    // Adds the stack to _items.
+    public void AddItem(ItemStack stack)
     {
-        int freeIndex = FindFirstStackWithSpace(item.Item);
+        int freeIndex = FindFirstStackWithSpace(stack.Item);
         if (freeIndex == -1) //No stacks match item OR all matching stacks are full.
-            _items.Add(new ActItem(item));
-        else
+            _items.Add(new ItemStack(stack)); //Adds new stack.
+        else //A stack matches the item and has empty space.
         {
-            int remainder = _items[freeIndex].Add(item.Amount);
-            Debug.Log(remainder);
+            int remainder = _items[freeIndex].Add(stack.Amount); //Add until amount depleted or stack is full.
             if (remainder > 0)
-                AddItem(new ActItem(item.Item, remainder));
+                AddItem(new ItemStack(stack.Item, remainder)); //If there are items left over from the stack filling up, repeat.
         }
+    }
+
+    //Removes the stack from _items.
+    public void DropStack(int index)
+    {
+        if (!InBounds(index)) return;
+
+        _items.RemoveAt(index);
     }
 
     #region Find
@@ -61,18 +71,22 @@ public class Inventory : MonoBehaviour
 
     private bool InBounds(int i)
         => (i >= 0 && i < _items.Count);
-    #region Inspector
 
+    #region Inspector
     [Button]
     public void AddItem()
-        => AddItem(_simItem);
+        => AddItem(_simStack);
+
+    [Button]
+    public void DropStack()
+        => DropStack(_simIndex);
     #endregion
 }
 //=====================================================================================================================
 // Act Item
 //=====================================================================================================================
 [Serializable]
-public class ActItem
+public class ItemStack
 {
     [SerializeField, Required]
     private SO_Item _item;
@@ -81,27 +95,22 @@ public class ActItem
 
     #region GS
     public int Amount 
-        {   get => _amount; 
-            set 
-            { 
-                _amount = Mathf.Clamp(value, 0, _item.StackSize);
-                //Mathf.Clamp(_amount, 0, _item.StackSize);
-            } 
-        }
+        {   get => _amount; set => _amount = Mathf.Clamp(value, 0, _item.StackSize); }
     public SO_Item Item { get => _item; }
     #endregion
 
-    public ActItem(ActItem ai)
+    public ItemStack(ItemStack stack)
     {
-        _item = ai.Item;
-        _amount = ai.Amount;
+        _item = stack.Item;
+        _amount = stack.Amount;
     }
-    public ActItem(SO_Item item, int amount)
+    public ItemStack(SO_Item item, int amount)
     {
         _item = item;
         _amount = amount;
     }
 
+    //Adds the amount. If the new amount is larger than the stack size, returns the remainder.
     public int Add(int a)
     {
         int remainder = (_amount + a) - Item.StackSize;
@@ -109,6 +118,7 @@ public class ActItem
         return (remainder < 0)? 0 : remainder;
     }
 
+    //Returns true if the stack is full.
     public bool AtCapacity()
         => _amount >= _item.StackSize;
 }

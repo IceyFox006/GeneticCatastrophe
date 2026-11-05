@@ -510,9 +510,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Inventory
   _slotCount: 100
   _items: []
-  _simItem:
+  _simIndex: 0
+  _simStack:
     _item: {fileID: 11400000, guid: 7a03d7e97fd9dd843a523c656a9adc6f, type: 2}
-    _amount: 1
+    _amount: 100
 --- !u!1 &1864333605
 GameObject:
   m_ObjectHideFlags: 0
